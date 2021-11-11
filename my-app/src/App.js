@@ -1,12 +1,13 @@
 import logo from './logo.svg'
-import Navbar from './Navbar/StreamItNavbar';
+
+import Header from './Screens/Layout/Header/Header';
 import './App.css';
-import StreamItNavbar from './Navbar/StreamItNavbar';
+
 
 function App() {
   return (
     <div className="App">
-      <StreamItNavbar/>
+  <Header/>
     </div>
   );
 }
