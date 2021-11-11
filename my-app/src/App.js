@@ -1,13 +1,13 @@
 import logo from './logo.svg'
+import Layout from './Screens/Layout/Layout';
 
-import Header from './Screens/Layout/Header/Header';
 import './App.css';
 
 
 function App() {
   return (
     <div className="App">
-  <Header/>
+     <Layout/>
     </div>
   );
 }

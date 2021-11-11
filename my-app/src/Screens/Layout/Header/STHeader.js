@@ -1,7 +1,7 @@
 import React from 'react'
 import STNavbar from './STNavbar'
 
-function Header() {
+function STHeader() {
     return (
         <header id="main-header">
         <div class="main-header">
@@ -17,4 +17,4 @@ function Header() {
     )
 }
 
-export default Header
+export default STHeader
