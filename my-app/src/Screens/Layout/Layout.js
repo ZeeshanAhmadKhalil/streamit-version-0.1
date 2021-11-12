@@ -7,7 +7,7 @@ function Layout() {
     return (
         <div>
              <STHeader/>
-             <MainSection className="main-section-class"/>
+             <MainSection/>
              <MainContent/> 
         </div>
     )
