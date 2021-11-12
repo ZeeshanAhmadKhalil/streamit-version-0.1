@@ -5,7 +5,7 @@ function StreamItNavbar() {
     return (
         <div className="iq-breadcrumb-one  iq-bg-over iq-over-dark-50">  
         <Container fluid> 
-            <Row className="align-items-center">
+            {/* <Row className="align-items-center">
                 <Col sm="12">
                     <nav className="text-center iq-breadcrumb-two">
                         <h2 className="title">Blog</h2>
@@ -15,7 +15,7 @@ function StreamItNavbar() {
                         </Breadcrumb>
                     </nav>
                 </Col>
-            </Row> 
+            </Row>  */}
         </Container>
     </div>
     )

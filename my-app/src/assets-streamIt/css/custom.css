@@ -1,0 +1,12 @@
+/*-------------------------------------------Navbar Custom Styling-----------------*/
+
+.logo{
+    background: url("http://multitude.io/frontend/images/logo.png") no-repeat;
+}
+
+
+/*-------------------------------------------Main Section-----------------*/
+.main-section-class{
+
+    margin-top: 8rem;
+}
