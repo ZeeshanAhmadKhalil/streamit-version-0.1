@@ -148,7 +148,7 @@ function STNavbar() {
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                      <div class="menu-main-menu-container">
                         <ul id="top-menu" class="navbar-nav ml-auto">
-                           <li class="menu-item">
+                           <li class="menu-item nav-fonts">
                               <a href="index.html">Home</a>
                            </li>
                            <li class="menu-item">

@@ -426,7 +426,7 @@ header .navbar ul li:last-child {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 100vh;
   position: relative;
   z-index: 1;
 }
@@ -1114,21 +1114,21 @@ li.slide-item .block-description .parallax-ratting span {
   left: 0;
   width: 90%;
   height: 100%;
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     rgba(20, 20, 20, 1) 0%,
     rgba(36, 36, 36, 1) 35%,
     rgba(83, 100, 141, 0) 100%
-  );
+  ); */
   z-index: 1;
 }
 .slick-bg:before {
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     rgba(0, 0, 0, 1) 0%,
     rgba(20, 20, 20, 1) 35%,
     rgba(83, 100, 141, 0) 100%
-  );
+  ); */
   width: 100%;
   z-index: -1;
 }

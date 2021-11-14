@@ -1,12 +1,99 @@
+/*---------------------------------Variables -----------------------*/
+
+:root {
+  --color-primary: #b58a32;
+  --color-sacondary: #ffca00;
+  --color-tertiary: #6c757d;
+}
+
 /*-------------------------------------------Navbar Custom Styling-----------------*/
 
-.logo{
-    background: url("http://multitude.io/frontend/images/logo.png") no-repeat;
+.logo {
+  background: url("http://multitude.io/frontend/images/logo.png") no-repeat;
+
+
+}
+
+header .navbar ul li.menu-item a{
+    font-size: 12px;
 }
 
 
-/*-------------------------------------------Main Section-----------------*/
-.main-section-class{
+header .navbar ul.navbar-nav {
 
-    margin-top: 8rem;
+    text-align: left !important;
+   
+}
+
+
+
+
+/*-------------------------------------------Main Section-----------------*/
+
+.main-section-container{
+
+    padding-inline: 80px;
+}
+.main-section-class {
+  margin-top: 8rem;
+}
+.col-left-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.season-details-container {
+  display: flex;
+  border-radius: 10px;
+  background-color: #b58a32;
+  min-height: 150px;
+  margin-block: 5px;
+  background-image: linear-gradient(to right, #b58a32, #413f3c);
+  opacity: 0.8;
+}
+
+.season-details-left {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 20px;
+  padding-block: 15px;
+}
+
+.season-image-container {
+  width: 60%;
+}
+
+.season-image {
+  border-radius: 0px 10px 10px 0px;
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*-----------------------------media queries-------------------*/
+/* ======================== For mobile screen =================================*/
+@media only screen and (max-width: 600px) {
+  .season-details-container {
+    flex-direction: column;
+  }
+
+  .season-image-container {
+    width: 100%;
+  }
+
+  .box :nth-child(1) {
+    order: 2;
+  }
+  .box :nth-child(2) {
+    order: 1;
+  }
+
+  .not_box :nth-child(1) {
+    order: 1;
+  }
+  .not_box :nth-child(2) {
+    order: 2;
+  }
 }
