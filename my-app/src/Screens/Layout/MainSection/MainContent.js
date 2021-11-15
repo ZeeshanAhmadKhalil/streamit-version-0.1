@@ -1,8 +1,10 @@
 import React from 'react'
+import SeasonsCard from '../../../Crads/SeasonsCard'
 
 function MainContent() {
     return (
-    <div className="main-content">
+    <div className="seasons-card-container">
+        <SeasonsCard/>
        </div>
 
     )

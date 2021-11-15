@@ -21,15 +21,82 @@ header .navbar ul li.menu-item a{
 
 header .navbar ul.navbar-nav {
 
-    text-align: left !important;
+    text-align: left;
    
 }
 
+/*---------------------------------------Notification------------------*/
+.bg-danger {
+  background-color: var(--color-sacondary) !important;
+}
 
+/*--------------------------------------------------------Cards---------------------*/
+/* .seasons-card-container{
+  height: 70vh;
+} */
 
+/* .iq-favorites{
+height: 70%;
+} */
+.main-content{
+  padding: 100px;
+}
 
+/* .row-height{
+  height: 70%;
+} */
+
+.popular-seasons-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+ 
+
+}
+
+.popular-seasons-text{
+  text-decoration: underline;
+}
+
+.img-box{
+
+  height: 45vh !important;
+  background-size: cover !important;
+}
+
+.img-fluid{
+  height: 100%;
+}
+.main-title{
+  font-size: 40px;
+}
+/* .favorites-slider {
+  gap: 20px;
+} 
 /*-------------------------------------------Main Section-----------------*/
 
+.text-primary {
+  color: var(--color-sacondary) !important;
+}
+
+.text-primary {
+  color: var(--color-sacondary) !important;
+}
+
+.play-now-button{
+  background-color: var(--color-sacondary) !important;
+}
+
+.btn-link{
+  background: transparent;
+}
+
+.btn .iq-button, .btn-hover{
+  background-color: var(--color-sacondary) !important;
+  border: 2px solid var(--color-sacondary) !important;
+}
 .main-section-container{
 
     padding-inline: 80px;
@@ -72,6 +139,21 @@ header .navbar ul.navbar-nav {
   object-fit: cover;
 }
 
+/*------------------------------------------Section Hero------------------*/
+.hero-section-container{
+  height: 95vh;
+  background-color: violet;
+}
+
+.section-image{
+  background: url("https://multitude.s3.wasabisys.com/death-note/Banner/aKstAXssiivYvKj7bJOCKRt4oMK3ZhMnihfQrG5m.jpg");
+  background-size: cover;
+}
+
+.slick-bg:before{
+   height: 100%;
+}
+
 /*-----------------------------media queries-------------------*/
 /* ======================== For mobile screen =================================*/
 @media only screen and (max-width: 600px) {
@@ -96,4 +178,26 @@ header .navbar ul.navbar-nav {
   .not_box :nth-child(2) {
     order: 2;
   }
+}
+
+
+
+@media only screen and (max-width : 1024px) {
+
+
+  .favorites-contetns{
+    padding-top: 40%;
+  }
+
+  .favorites-slider{
+     display: flex;
+
+    
+  }
+
+  .slide-item{
+    height: 40vh;
+    width: 400px;
+  }
+
 }
