@@ -4,6 +4,9 @@ import STHeader from '../Layout/Header/STHeader'
 import MainContent from './MainSection/MainContent'
 import LatestMovies from './MainSection/LatestMovies'
 import SectionHero from './SectionHero'
+import UpperFooter from './Footer/UpperFooter'
+import LowerFooter from './Footer/LowerFooter'
+import MultitudeCarousel from './Carousel.js/MultitudeCarousel'
 
 function Layout() {
     return (
@@ -11,7 +14,12 @@ function Layout() {
              <STHeader/>
              <MainSection/>
              <MainContent/>
+             <MultitudeCarousel/>
              <SectionHero/>
+             <UpperFooter/>
+             <LowerFooter/>
+              
+            
              {/* <LatestMovies/> */}
         </div>
     )
