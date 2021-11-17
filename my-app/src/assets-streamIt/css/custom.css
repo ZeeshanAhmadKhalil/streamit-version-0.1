@@ -37,6 +37,14 @@ height: 70%;
   padding: 100px;
 }
 
+.favorites-slider li.slide-item{
+  width: 15vw;
+}
+.img-box{
+  height: 45vh;
+}
+
+
 /* .row-height{
   height: 70%;
 } */
@@ -47,10 +55,13 @@ height: 70%;
   justify-content: center;
   align-items: center;
   height: 250px;
+  width: 30vw !important;
+
+;
 }
 
 .popular-seasons-text {
-  text-decoration: underline;
+  border-bottom: 1px solid white;
 }
 
 .img-box {
@@ -177,7 +188,52 @@ height: 70%;
 
 .footer-link-title{
   font-size: large;
+  margin-bottom: 0.1rem !important;
 }
+
+.textwidget{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+
+.lower-footer-list-items{
+  list-style: none;
+  display: flex;
+}
+
+.lower-footer-list-item{
+  margin-right: 15px;
+}
+
+.footer-link-title{
+  margin-bottom: 10px !important;
+}
+.footer-buttons{
+  display:flex;
+  justify-content: space-between;
+}
+
+
+.btns-footer{
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+ 
+  border: 2px solid var(--color-sacondary);
+}
+
+.video-icon{
+  color: var(--color-sacondary);
+}
+
+/* .d-flex{
+ margin-right: 20px;
+} */
 
 /*---------------------------Modal-------------------------------*/
 .modal-div{
@@ -209,8 +265,42 @@ height: 70%;
 }
 
 
+/*-------------------------------------Create Channel----------------------------------------------*/
+.create-channel-container{
+  height: 100vh;
+  color: white;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  
+}
+.create-channel-inner{
+    background-color: rgb(43, 40, 40);
+   box-shadow: rgba(182, 182, 182, 0) 0px 8px 24px;
+}
 
+.user-details-input{
+  padding: 4rem;
+}
 
+.user-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 30px;
+
+}
+
+.avatar{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--color-sacondary);
+  margin-top: 10px;
+}
 
 
 

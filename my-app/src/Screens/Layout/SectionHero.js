@@ -12,10 +12,11 @@ function SectionHero() {
       <section
         id="home"
         className="iq-main-slider p-0 iq-rtl-direction section-image"
+
       >
         <div id="home-slider" className="slider m-0 p-0">
           <div className="slide slick-bg">
-            <div className="container position-relative h-100 main-section-container">
+            <div className="container-fluid position-relative h-100 main-section-container">
               <div className="slider-inner h-100">
                 <div className="row align-items-center  iq-ltr-direction h-100 ">
                   <div className="col-xl-6 col-lg-12 col-md-12 col-left-main">
@@ -73,39 +74,12 @@ function SectionHero() {
                         <i className="fa fa-play mr-2" aria-hidden="true"></i>
                         Play Now
                       </a>
-                      <div onClick={toggleModalClassic}>More details</div>
 
-                      <div className="section-hero-popup"></div>
-
-                      <div className="col-xl-5 col-lg-12 col-md-12 trailor-video  text-center">
-                        <a
-                          href="video/trailer.mp4"
-                          className="video-open playbtn"
-                        >
-                          <svg className="watch-trailer-svg">
-                            <polygon
-                              className="triangle"
-                              fill="none"
-                              stroke-width="7"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-miterlimit="10"
-                              points="73.5,62.5 148.5,105.8 73.5,149.1 "
-                            />
-                            <circle
-                              className="circle"
-                              fill="none"
-                              stroke-width="7"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-miterlimit="10"
-                              cx="106.8"
-                              cy="106.8"
-                              r="103.3"
-                            />
-                          </svg>
-                          <span className="w-trailor">Watch Trailer</span>
-                        </a>
+                      <div
+                        className="btn btn-link"
+                       
+                      >
+                        More details
                       </div>
                     </div>
                   </div>

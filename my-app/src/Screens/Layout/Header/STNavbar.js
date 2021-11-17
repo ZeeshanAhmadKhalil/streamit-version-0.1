@@ -1,4 +1,5 @@
 import React from "react";
+import {FaVideo} from "react-icons/fa"
 
 function STNavbar() {
   return (
@@ -29,6 +30,8 @@ function STNavbar() {
                         <div class="navbar-right position-relative">
                            <ul class="d-flex align-items-center justify-content-end list-inline m-0">
                               <li>
+                                
+
                                  <a href="#" class="search-toggle">
                                  <i class="ri-search-line"></i>
                                  </a>
@@ -89,12 +92,25 @@ function STNavbar() {
                                     </div>
                                  </div>
                               </li>
+
+                              <li class="nav-item nav-icon">
+                                 <a href="#" class="search-toggle position-relative">
+                                    <svg viewBox="0 0 24 24" width="22"
+                                       height="22" class="noti-svg">
+                                       <path fill="none" d="M0 0h24v24H0z" />
+                                       <path
+                                          d="M18 10a6 6 0 1 0-12 0v8h12v-8zm2 8.667l.4.533a.5.5 0 0 1-.4.8H4a.5.5 0 0 1-.4-.8l.4-.533V10a8 8 0 1 1 16 0v8.667zM9.5 21h5a2.5 2.5 0 1 1-5 0z" />
+                                    </svg>
+                                    <span class="bg-danger dots"></span>
+                                 </a>
+                                 
+                              </li>
                               <li>
-                                 <a href="#" class="iq-user-dropdown search-toggle d-flex align-items-center">
+                                 {/* <a href="#" class="iq-user-dropdown search-toggle d-flex align-items-center">
                                  <img src="images/user/user.jpg" class="img-fluid avatar-40 rounded-circle"
                                     alt="user"/>
-                                 </a>
-                                 <div class="iq-sub-dropdown iq-user-dropdown">
+                                 </a> */}
+                                 {/* <div class="iq-sub-dropdown iq-user-dropdown">
                                     <div class="iq-card shadow-none m-0">
                                        <div class="iq-card-body p-0 pl-3 pr-3">
                                           <a href="manage-profile.html" class="iq-sub-card setting-dropdown">
@@ -139,7 +155,7 @@ function STNavbar() {
                                           </a>
                                        </div>
                                     </div>
-                                 </div>
+                                 </div> */}
                               </li>
                            </ul>
                         </div>
@@ -194,6 +210,10 @@ function STNavbar() {
                               </form>
                            </div>
                         </li>
+                        <li class="nav-item nav-icon video-icon">
+                           <FaVideo/>
+                           </li>
+                      
                         <li class="nav-item nav-icon">
                            <a href="#" class="search-toggle" data-toggle="search-toggle">
                               <svg viewBox="0 0 24 24" width="22" height="22"

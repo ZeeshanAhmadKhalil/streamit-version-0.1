@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap";
 function UpperFooter() {
   return (
     <Container>
-      <div className="upper-footer-container">
+      <div className="container-fluid upper-footer-container">
         <div className="logo-div">
           <img
             className="footer-logo"
@@ -37,14 +37,10 @@ function UpperFooter() {
           <div class="text-left">
             <div class="textwidget">
               <h6 class="footer-link-title">Multitude App</h6>
-              <div class="d-flex align-items-center">
-                <a href="show-details.html" className="btn btn-hover iq-button">
-                  <i className="fa fa-play mr-2" aria-hidden="true"></i>Play Now
-                </a>
+              <div class="footer-buttons">
+               <button type="button" className="btns-footer"> App Store</button>
                 <br />
-                <a href="show-details.html" className="btn btn-hover iq-button">
-                  <i className="fa fa-play mr-2" aria-hidden="true"></i>Play Now
-                </a>
+                <button type="button" className="btns-footer"> App Store</button>
               </div>
             </div>
           </div>

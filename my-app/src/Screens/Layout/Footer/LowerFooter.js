@@ -5,14 +5,14 @@ function LowerFooter() {
 
     let year = myCurrentDate.getFullYear();
     return (
-        <div className="lower-footer">
+        <div className="container-fluid lower-footer">
 
 
             <div classsName="lower-footer-list">
-                <ul className="info-share"> 
-                          <li><a target="_blank" href="#">Privacy Policy</a></li>
-                          <li><a target="_blank" href="#">Terms</a></li>
-                          <li><a target="_blank" href="#">Condition</a></li>
+                <ul className="lower-footer-list-items"> 
+                          <li className="lower-footer-list-item"><a target="_blank" href="#">Privacy Policy</a></li>
+                          <li className="lower-footer-list-item"><a target="_blank" href="#">Terms</a></li>
+                          <li className="lower-footer-list-item"><a target="_blank" href="#">Condition</a></li>
                          
             </ul>
             </div>

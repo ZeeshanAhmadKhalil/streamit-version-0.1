@@ -58,7 +58,7 @@ function MainSection() {
       >
         <div id="home-slider" className="slider m-0 p-0">
           <div className="slide slick-bg">
-            <div className="container position-relative h-100 main-section-container">
+            <div className="container-fluid position-relative h-100 main-section-container">
               <div className="slider-inner h-100">
                 <div className="row align-items-center  iq-ltr-direction h-100 ">
                   <div className="col-xl-6 col-lg-12 col-md-12 col-left-main">

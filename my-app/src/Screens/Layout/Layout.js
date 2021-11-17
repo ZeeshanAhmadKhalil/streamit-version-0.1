@@ -7,6 +7,7 @@ import SectionHero from './SectionHero'
 import UpperFooter from './Footer/UpperFooter'
 import LowerFooter from './Footer/LowerFooter'
 import MultitudeCarousel from './Carousel.js/MultitudeCarousel'
+import CreateChannel from './Form/CreateChannel'
 
 function Layout() {
     return (
@@ -14,8 +15,11 @@ function Layout() {
              <STHeader/>
              <MainSection/>
              <MainContent/>
-             <MultitudeCarousel/>
+             
              <SectionHero/>
+             <MultitudeCarousel/>
+
+             <CreateChannel/>
              <UpperFooter/>
              <LowerFooter/>
               
