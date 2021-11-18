@@ -1,6 +1,9 @@
 import React from "react";
 
 import { Form } from "react-bootstrap";
+
+
+
 function CreateChannel() {
   return (
     <div className="create-channel-container">
@@ -37,6 +40,7 @@ function CreateChannel() {
           </Form>
         </div>
       </div>
+           
     </div>
   );
 }

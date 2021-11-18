@@ -240,6 +240,56 @@ height: 70%;
   background-color: black;
 }
 
+ /* .button-season{
+  margin-right: 10px;
+}  */
+
+.season-button{
+  display: flex;
+ justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.ml-3{
+  margin-right: 3px;
+  color: black;
+}
+
+.modal-text{
+  display: flex;
+  color: black;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+
+.text-left{
+  width: 400px;
+}
+
+.episodes-heading{
+  margin: 1rem;
+  color: black;
+}
+
+.season-episodes{
+  display: flex;
+  flex-direction: column;
+  color: black;
+  gap: 10px;
+}
+
+.season-episodes-upper{
+  display: flex;
+  justify-content: flex-start;
+  color: black;
+  gap: 1rem;
+}
+
+.episode-heading{
+  color: black;
+}
 
 /*---------------------------lower footer-------------------------------*/
 
@@ -249,11 +299,14 @@ height: 70%;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
+ 
+
 }
 
 .lower-footer-list{
  display: flex;
  flex-direction: row;
+
 }
 
 .info-share{
@@ -261,6 +314,7 @@ height: 70%;
   flex-direction: row;
   list-style: none;
   justify-content: space-between;
+ 
  
 }
 

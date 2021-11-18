@@ -11,8 +11,7 @@ function SectionHero() {
     <React.Fragment>
       <section
         id="home"
-        className="iq-main-slider p-0 iq-rtl-direction section-image"
-
+        className="container-fluid iq-main-slider p-0 iq-rtl-direction section-image"
       >
         <div id="home-slider" className="slider m-0 p-0">
           <div className="slide slick-bg">
