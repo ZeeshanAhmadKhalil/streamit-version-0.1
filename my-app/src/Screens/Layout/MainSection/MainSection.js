@@ -71,7 +71,7 @@ function MainSection() {
             <div className="container season-episodes">
               <div className="season-episodes-upper">
                 <img src="	https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1508919801845-fc2ae1bc2a28%3Fixid%3DMnwxMjA3fDB8MHxzZWFyY2h8MXx8aW1nfGVufDB8fDB8fA%253D%253D%26ixlib%3Drb-1.2.1%26w%3D1000%26q%3D80&imgrefurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fimg&tbnid=QbKX_KCUbjkZ4M&vet=12ahUKEwj3mobT0KH0AhX_AmMBHXPADiIQMygBegUIARDMAQ..i&docid=f3riLA-4-1potM&w=1000&h=637&itg=1&q=img&ved=2ahUKEwj3mobT0KH0AhX_AmMBHXPADiIQMygBegUIARDMAQ" />
-                <h4 className="episode-heading" >Episode 1</h4>
+                <h4 className="episode-heading">Episode 1</h4>
               </div>
               <div className="season-episodes-upper">
                 <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1508919801845-fc2ae1bc2a28%3Fixid%3DMnwxMjA3fDB8MHxzZWFyY2h8MXx8aW1nfGVufDB8fDB8fA%253D%253D%26ixlib%3Drb-1.2.1%26w%3D1000%26q%3D80&imgrefurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fimg&tbnid=QbKX_KCUbjkZ4M&vet=12ahUKEwj3mobT0KH0AhX_AmMBHXPADiIQMygBegUIARDMAQ..i&docid=f3riLA-4-1potM&w=1000&h=637&itg=1&q=img&ved=2ahUKEwj3mobT0KH0AhX_AmMBHXPADiIQMygBegUIARDMAQ" />
@@ -86,15 +86,22 @@ function MainSection() {
         className="iq-main-slider p-0 iq-rtl-direction"
         style={{ height: "90vh" }}
       >
-        <div id="home-slider" className="slider m-0 p-0">
-          <div className="slide slick-bg">
-            <div className="container-fluid position-relative h-100 main-section-container">
-              <div className="slider-inner h-100">
-                {/* <video autoplay muted loop id="myVideo">
-                    <source src="https://multitude.s3.wasabisys.com/money-heist/trailer/aINOB5uahg4AamDl2e1bKq5fsZev7TACImTHRxeX.mp4" type="video/mp4" />
-                  </video>  */}
-                <div className="row align-items-center  iq-ltr-direction h-100 ">
-                  <div className="col-xl-6 col-lg-12 col-md-12 col-left-main">
+        <div id="home-slider" className="slider m-0 p-0 slider-video">
+          <video autoplay="" muted="" loop id="myVideo" class="w-100">
+            <source
+              src="https://multitude.s3.wasabisys.com/money-heist/trailer/aINOB5uahg4AamDl2e1bKq5fsZev7TACImTHRxeX.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support HTML5 video.
+          </video>
+
+
+
+          <div className="slide slick-bg ">
+            <div className="container-fluid position-relative h-100 main-section-container content">
+              <div className="slider-inner h-100 ">
+                <div className="row align-items-center  iq-ltr-direction h-100 content">
+                  <div className="col-xl-6 col-lg-12 col-md-12 col-left-main ">
                     <h1
                       className="slider-text big-title title text-uppercase"
                       data-animation-in="fadeInLeft"

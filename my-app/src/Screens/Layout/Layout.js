@@ -6,10 +6,16 @@ import LatestMovies from "./MainSection/LatestMovies";
 import SectionHero from "./SectionHero";
 import UpperFooter from "./Footer/UpperFooter";
 import LowerFooter from "./Footer/LowerFooter";
+import Following from "./Following/Following";
 import MultitudeCarousel from "./Carousel.js/MultitudeCarousel";
 import CreateChannel from "./Form/CreateChannel";
-import Trending from "../../Trending/Trending";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
+import New from './New/New'
+import Trending from "./Trending/Trending";
+import HorrorSeasons from "./PopularHorrorSeasons/HorrorSeasons";
+import Comedy from "./Comedy-section/Comedy";
+// import Trending from "../../Trending/Trending";
+// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function Layout() {
   const [toggleHeader, setToggleHeader] = React.useState(false);
@@ -20,23 +26,35 @@ function Layout() {
       <MainContent />
 
       <SectionHero />
-      <MultitudeCarousel />
+
+      {/* <HorrorSeasons/>
+
+      <Comedy/>
 
       <CreateChannel />
 
+      <Trending />
+
+      <New/> 
+
+     <Following/> */}
+
+     <MultitudeCarousel/>
+
+<Following/>
       <UpperFooter />
 
       <LowerFooter />
 
       {/* <LatestMovies/> */}
 
-      <Router>
-        <Switch>
+      {/* <Router>
+        
           <Route exact path="/trending">
             <Trending />
           </Route>
-        </Switch>
-      </Router>
+       
+      </Router>  */}
     </div>
   );
 }

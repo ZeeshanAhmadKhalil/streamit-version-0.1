@@ -1,11 +1,12 @@
 import React from "react";
+// import {useNavigate} from 'react-router-dom';
 import { FaVideo } from "react-icons/fa";
 import Notifications from "../Notifications/Notifications";
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 
-function STNavbar() {
+function STNavbar(props) {
 
-  let history = useHistory();
+  // let history = useHistory();
   const [dropdown, setDropdown] = React.useState(false);
 
   const showDropdown = () => {
@@ -13,9 +14,12 @@ function STNavbar() {
     console.log("hi there");
   };
 
-  function handleClick() {
-    history.push("/trending");
-  }
+
+
+//    function handleClick() {
+//     history.push("/trending");
+    
+//  }
 
   return (
     <header id="main-header">
@@ -131,7 +135,7 @@ function STNavbar() {
                             <span class="bg-danger dots"></span>
                           </a>
                         </li>
-                        <li>{true && <Notifications />}</li>
+                        <li>{ <Notifications />}</li>
                       </ul>
                     </div>
                   </div>
@@ -149,18 +153,7 @@ function STNavbar() {
                         <a href="movie-category.html">Movies</a>
                       </li>
                       <li class="menu-item">
-                        <a href="" onClick={handleClick}>Trending</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="#">Blog</a>
-                        <ul class="sub-menu">
-                          <li class="menu-item">
-                            <a href="blog.html">Blog</a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="blog-details.html">Blog details</a>
-                          </li>
-                        </ul>
+                        <a>Trending</a>
                       </li>
                       <li class="menu-item">
                         <a href="#">Catagories</a>

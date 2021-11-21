@@ -1,0 +1,49 @@
+.CarouselSplit{
+    flex-direction: row;
+    /* width: 100%; */
+}
+
+.CarouselContainer{
+    border: 2px dashed red; 
+    width: 100%;
+    
+}
+
+
+
+.img-box{
+    height:30vh !important;
+}
+
+.card-text-list{
+    display: flex;
+    justify-content: space-between;
+    align-items :flex-start;
+
+}
+   
+
+@media only screen and (max-width: 1100px) {
+    .CarouselSplit{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .CarouselContainer{
+        width: 100%;
+    }
+  }
+
+/* 
+  .react-multi-carousel-item{
+
+    width: 400px;
+
+  }
+   
+  
+  
+.react-multi-carousel-item--active{
+    width: 280px;
+}  */
