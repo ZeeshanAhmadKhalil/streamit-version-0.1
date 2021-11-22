@@ -20,7 +20,6 @@ import {
   Switch,
   Route,
   Link,
-  withRouter,
   BrowserRouter,
 } from "react-router-dom";
 
@@ -29,10 +28,9 @@ function Layout() {
   return (
     <div>
       <STHeader />
-      <MainSection />
-      <MainContent />
+      
 
-      <SectionHero />
+      
 
       {/* <HorrorSeasons/>
 
@@ -46,12 +44,10 @@ function Layout() {
 
      <Following/> */}
 
-      <MultitudeCarousel />
+      {/* <MultitudeCarousel />
 
       <Following />
-      <UpperFooter />
-
-      <LowerFooter />
+     */}
 
       {/* <LatestMovies/> */}
 
@@ -67,6 +63,10 @@ function Layout() {
        
       </Route>
 
+      <Route exact path="/home"><SectionHero />
+      <MainSection />
+      <MainContent /> </Route>
+
       <Route path="/trending" exact>
         <Trending />
       </Route>
@@ -77,10 +77,12 @@ function Layout() {
       </Route>
        
       </Switch>
+      <UpperFooter />
 
+<LowerFooter />
      
     </div>
   );
 }
 
-export default withRouter(Layout);
+export default Layout;

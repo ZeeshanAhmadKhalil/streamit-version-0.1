@@ -71,23 +71,17 @@ header .navbar-light .navbar-brand img.logo {
   right: 0;
 }
 .navbar-right li .iq-sub-dropdown .iq-sub-card {
-  position: relative;
+  position: absolute;
   font-size: inherit;
   padding: 15px 15px;
   line-height: normal;
   color: inherit;
   text-align: left;
-  display: inline-block;
-  width: 100%;
-  border: 1px solid;
-  border-image-slice: 1;
-  border-width: 0 0 1px 0;
-  border-image-source: linear-gradient(
-    to right,
-    rgba(209, 208, 207, 0.6),
-    rgba(209, 208, 207, 0.3),
-    rgba(209, 208, 207, 0)
-  );
+visibility: unset;
+opacity: 1 !important;
+  height: 2rem;
+  background-color: tomato;
+  width: 3rem;
 }
 .iq-sub-card.setting-dropdown {
   padding: 15px 15px 15px 0 !important;

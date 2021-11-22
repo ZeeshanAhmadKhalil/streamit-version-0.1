@@ -8,6 +8,11 @@
 
 /*-------------------------------------------Navbar Custom Styling-----------------*/
 
+.navbar-right .iq-sub-dropdown {
+  visibility: unset !important;
+   opacity: 1 !important;
+}
+
 .logo {
   background: url("http://multitude.io/frontend/images/logo.png") no-repeat;
 }

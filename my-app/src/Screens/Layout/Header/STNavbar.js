@@ -14,6 +14,8 @@ function STNavbar() {
   let history = useHistory();
   const [dropdown, setDropdown] = React.useState(false);
 
+  const [profile, setProfile] = React.useState(false)
+
   const showDropdown = () => {
     setDropdown((prevState) => !prevState);
     console.log("hi there");
@@ -29,6 +31,10 @@ function STNavbar() {
 
   const handleComedy = () =>{
     history.push("/comedy");
+  }
+
+  const handleDropdown =() =>{
+       setProfile( !profile)
   }
 
   return (
@@ -159,8 +165,9 @@ function STNavbar() {
 
                  
                       <li class="menu-item nav-fonts">
-                        
+                      <Link to='/home'>
                         <a href="index.html">Home</a>
+                        </Link>
                       </li>
                       <li class="menu-item" >
                         <Link to='/new'>
@@ -234,7 +241,10 @@ function STNavbar() {
                         </svg>
                         <span class="bg-danger dots"></span>
                       </a>
-                      <div class="iq-sub-dropdown">
+
+
+
+                   { profile &&  (<div class="iq-sub-dropdown tamatr">
                         <div class="iq-card shadow-none m-0">
                           <div class="iq-card-body">
                             <a href="#" class="iq-sub-card">
@@ -280,92 +290,25 @@ function STNavbar() {
                             </a>
                           </div>
                         </div>
-                      </div>
+                      </div>)}
                     </li>
                     <li class="nav-item nav-icon">
                       <a
                         href="#"
                         class="iq-user-dropdown search-toggle p-0 d-flex align-items-center"
                         data-toggle="search-toggle"
+                        
+                        
                       >
                         <img
                           src="images/user/user.jpg"
                           class="img-fluid avatar-40 rounded-circle"
                           alt="user"
+                          onClick= {handleDropdown}
                         />
                       </a>
 
-                      <Dropdown as={ButtonGroup}>
-                        <Dropdown.Menu>
-                          <Dropdown.Item href="#/action-1">
-                            Action
-                          </Dropdown.Item>
-                          <Dropdown.Item href="#/action-2">
-                            Another action
-                          </Dropdown.Item>
-                          <Dropdown.Item href="#/action-3">
-                            Something else
-                          </Dropdown.Item>
-                        </Dropdown.Menu>
-                      </Dropdown>
-                      <div class="iq-sub-dropdown iq-user-dropdown">
-                        <div class="iq-card shadow-none m-0">
-                          <div class="iq-card-body p-0 pl-3 pr-3">
-                            <a
-                              href="manage-profile.html"
-                              class="iq-sub-card setting-dropdown"
-                            >
-                              <div class="media align-items-center">
-                                <div class="right-icon">
-                                  <i class="ri-file-user-line text-primary"></i>
-                                </div>
-                                <div class="media-body ml-3">
-                                  <h6 class="my-0 ">Manage Profile</h6>
-                                </div>
-                              </div>
-                            </a>
-                            <a
-                              href="setting.html"
-                              class="iq-sub-card setting-dropdown"
-                            >
-                              <div class="media align-items-center">
-                                <div class="right-icon">
-                                  <i class="ri-settings-4-line text-primary"></i>
-                                </div>
-                                <div class="media-body ml-3">
-                                  <h6 class="my-0 ">Settings</h6>
-                                </div>
-                              </div>
-                            </a>
-                            <a
-                              href="pricing-plan-1.html"
-                              class="iq-sub-card setting-dropdown"
-                            >
-                              <div class="media align-items-center">
-                                <div class="right-icon">
-                                  <i class="ri-settings-4-line text-primary"></i>
-                                </div>
-                                <div class="media-body ml-3">
-                                  <h6 class="my-0 ">Pricing Plan</h6>
-                                </div>
-                              </div>
-                            </a>
-                            <a
-                              href="login.html"
-                              class="iq-sub-card setting-dropdown"
-                            >
-                              <div class="media align-items-center">
-                                <div class="right-icon">
-                                  <i class="ri-logout-circle-line text-primary"></i>
-                                </div>
-                                <div class="media-body ml-3">
-                                  <h6 class="my-0 ">Logout</h6>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
+                      
                     </li>
                   </ul>
                 </div>
