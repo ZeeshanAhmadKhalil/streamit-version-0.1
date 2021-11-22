@@ -10,12 +10,19 @@ import Following from "./Following/Following";
 import MultitudeCarousel from "./Carousel.js/MultitudeCarousel";
 import CreateChannel from "./Form/CreateChannel";
 
-import New from './New/New'
+import New from "./New/New";
 import Trending from "./Trending/Trending";
 import HorrorSeasons from "./PopularHorrorSeasons/HorrorSeasons";
 import Comedy from "./Comedy-section/Comedy";
 // import Trending from "../../Trending/Trending";
-// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  withRouter,
+  BrowserRouter,
+} from "react-router-dom";
 
 function Layout() {
   const [toggleHeader, setToggleHeader] = React.useState(false);
@@ -39,24 +46,41 @@ function Layout() {
 
      <Following/> */}
 
-     <MultitudeCarousel/>
+      <MultitudeCarousel />
 
-<Following/>
+      <Following />
       <UpperFooter />
 
       <LowerFooter />
 
       {/* <LatestMovies/> */}
 
-      {/* <Router>
-        
-          <Route exact path="/trending">
-            <Trending />
-          </Route>
+      {/* <BrowserRouter>
+      <Route path="/trending">
+        <Trending />
+      </Route>
+      </BrowserRouter> */}
+
+      <Switch>
+
+      <Route exact path="/new" component={New}>
        
-      </Router>  */}
+      </Route>
+
+      <Route path="/trending" exact>
+        <Trending />
+      </Route>
+
+      
+      <Route path="/comedy" exact>
+        <Comedy />
+      </Route>
+       
+      </Switch>
+
+     
     </div>
   );
 }
 
-export default Layout;
+export default withRouter(Layout);

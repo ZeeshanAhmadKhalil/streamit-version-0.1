@@ -2,11 +2,16 @@ import React from "react";
 // import {useNavigate} from 'react-router-dom';
 import { FaVideo } from "react-icons/fa";
 import Notifications from "../Notifications/Notifications";
-// import { useHistory } from "react-router-dom";
+import DropdownButton from "react-bootstrap/DropdownButton";
+import Dropdown from "react-bootstrap/Dropdown";
+import Button from "react-bootstrap/Button";
+import ButtonGroup from "react-bootstrap/ButtonGroup";
+import { Link } from "react-router-dom";
 
-function STNavbar(props) {
+import { useHistory } from "react-router-dom";
 
-  // let history = useHistory();
+function STNavbar() {
+  let history = useHistory();
   const [dropdown, setDropdown] = React.useState(false);
 
   const showDropdown = () => {
@@ -14,12 +19,17 @@ function STNavbar(props) {
     console.log("hi there");
   };
 
+  const handleClick = () => {
+    history.push("/trending");
+  };
 
+  // const handleNew = () => {
+  //   history.push("/new");
+  // };
 
-//    function handleClick() {
-//     history.push("/trending");
-    
-//  }
+  const handleComedy = () =>{
+    history.push("/comedy");
+  }
 
   return (
     <header id="main-header">
@@ -135,7 +145,7 @@ function STNavbar(props) {
                             <span class="bg-danger dots"></span>
                           </a>
                         </li>
-                        <li>{ <Notifications />}</li>
+                        <li>{<Notifications />}</li>
                       </ul>
                     </div>
                   </div>
@@ -146,13 +156,19 @@ function STNavbar(props) {
                 >
                   <div class="menu-main-menu-container">
                     <ul id="top-menu" class="navbar-nav ml-auto">
+
+                 
                       <li class="menu-item nav-fonts">
+                        
                         <a href="index.html">Home</a>
                       </li>
-                      <li class="menu-item">
-                        <a href="movie-category.html">Movies</a>
+                      <li class="menu-item" >
+                        <Link to='/new'>
+                        <a>New</a>
+                        </Link>
+                        
                       </li>
-                      <li class="menu-item">
+                      <li class="menu-item" onClick={handleClick}>
                         <a>Trending</a>
                       </li>
                       <li class="menu-item">
@@ -164,8 +180,8 @@ function STNavbar(props) {
                           <li class="menu-item ">
                             <a href="contact.html">Adventure</a>
                           </li>
-                          <li class="menu-item">
-                            <a href="faq.html">Comedy</a>
+                          <li class="menu-item" onClick={handleComedy}>
+                            <a>Comedy</a>
                           </li>
                           <li class="menu-item">
                             <a href="privacy-policy.html">Thriller</a>
@@ -278,6 +294,20 @@ function STNavbar(props) {
                           alt="user"
                         />
                       </a>
+
+                      <Dropdown as={ButtonGroup}>
+                        <Dropdown.Menu>
+                          <Dropdown.Item href="#/action-1">
+                            Action
+                          </Dropdown.Item>
+                          <Dropdown.Item href="#/action-2">
+                            Another action
+                          </Dropdown.Item>
+                          <Dropdown.Item href="#/action-3">
+                            Something else
+                          </Dropdown.Item>
+                        </Dropdown.Menu>
+                      </Dropdown>
                       <div class="iq-sub-dropdown iq-user-dropdown">
                         <div class="iq-card shadow-none m-0">
                           <div class="iq-card-body p-0 pl-3 pr-3">

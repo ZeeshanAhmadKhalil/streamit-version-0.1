@@ -1,7 +1,8 @@
 import React from "react";
 import SeasonDetails from "./SeasonDetails";
 import trailer from "../Header/video/trailer.mp4";
-import { Modal, ModalBody } from "reactstrap";
+import { Modal, ModalBody, ModalHeader } from "reactstrap";
+
 
 function MainSection() {
   const [modalClassic, setModalClassic] = React.useState(false);
@@ -12,12 +13,35 @@ function MainSection() {
   return (
     <React.Fragment>
       <div className="modal-div">
-        <Modal size="lg" isOpen={modalClassic} toggle={toggleModalClassic}>
-          <img src="https://photographycourse.net/wp-content/uploads/2014/11/Landscape-Photography-steps.jpg" />
-          <div className="col-lg-3 col-md-6 mt-4 mt-lg-0">
+        <Modal
+          size="lg"
+          isOpen={modalClassic}
+          toggle={toggleModalClassic}
+          className="modal-container"
+        >
+          <ModalHeader toggle={toggleModalClassic}>
+         
+          </ModalHeader>
+          <video
+            muted=""
+            loop=""
+            controls
+            autoplay=""
+            class="w-100"
+            id="modal-video"
+          >
+            <source
+              src="https://multitude.s3.wasabisys.com/money-heist/trailer/aINOB5uahg4AamDl2e1bKq5fsZev7TACImTHRxeX.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support HTML5 video.
+          </video>
+          
+
+          <ModalBody>
+          <div className="container col-lg-3 col-md-6 mt-4 mt-lg-0">
             <div className="text-left">
               <div className="textwidget">
-                <h6 className="footer-link-title">Multitude App</h6>
                 <div className="d-flex align-items-center season-button">
                   <a
                     href="show-details.html"
@@ -36,8 +60,6 @@ function MainSection() {
               </div>
             </div>
           </div>
-
-          <ModalBody>
             <div
               className="container span-tags"
               data-animation-in="fadeInUp"
@@ -46,7 +68,7 @@ function MainSection() {
               <span className="ml-3">11-16-2021</span>
               <span className="badge badge-secondary p-2">11+</span>
             </div>
-            <div className="modal-text">
+            <div className="container modal-text ">
               <div className="text-left">
                 A criminal mastermind who goes by "The Professor" has a plan to
                 pull off the biggest heist in recorded history -- to print
@@ -58,10 +80,10 @@ function MainSection() {
                 As more time elapses, the robbers prepare for a showdown with
                 the police
               </div>
-              <div className="text-right">
-                <p>Cast: cast</p>
-                <p>Genres: Action</p>
-                <p>publisher: multitude</p>
+              <div className="text-align-right">
+                <p><span className="span-props">Cast</span>: cast</p>
+                <p><span className="span-props">Genres</span>: Action</p>
+                <p><span className="span-props">publisher</span>: multitude</p>
               </div>
             </div>
             <div>
@@ -70,11 +92,17 @@ function MainSection() {
 
             <div className="container season-episodes">
               <div className="season-episodes-upper">
-                <img src="	https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1508919801845-fc2ae1bc2a28%3Fixid%3DMnwxMjA3fDB8MHxzZWFyY2h8MXx8aW1nfGVufDB8fDB8fA%253D%253D%26ixlib%3Drb-1.2.1%26w%3D1000%26q%3D80&imgrefurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fimg&tbnid=QbKX_KCUbjkZ4M&vet=12ahUKEwj3mobT0KH0AhX_AmMBHXPADiIQMygBegUIARDMAQ..i&docid=f3riLA-4-1potM&w=1000&h=637&itg=1&q=img&ved=2ahUKEwj3mobT0KH0AhX_AmMBHXPADiIQMygBegUIARDMAQ" />
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSywN4mSK5myMOZH3drF1_uZtiJa8AIzO_c9Q&usqp=CAU"
+                  className="seasons-episode-img"
+                />
                 <h4 className="episode-heading">Episode 1</h4>
               </div>
               <div className="season-episodes-upper">
-                <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1508919801845-fc2ae1bc2a28%3Fixid%3DMnwxMjA3fDB8MHxzZWFyY2h8MXx8aW1nfGVufDB8fDB8fA%253D%253D%26ixlib%3Drb-1.2.1%26w%3D1000%26q%3D80&imgrefurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fimg&tbnid=QbKX_KCUbjkZ4M&vet=12ahUKEwj3mobT0KH0AhX_AmMBHXPADiIQMygBegUIARDMAQ..i&docid=f3riLA-4-1potM&w=1000&h=637&itg=1&q=img&ved=2ahUKEwj3mobT0KH0AhX_AmMBHXPADiIQMygBegUIARDMAQ" />
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5ktko1j5f9gRIDnY99Zw3UPTZ2zTdhGxy-A&usqp=CAU"
+                  className="seasons-episode-img"
+                />
                 <h5 className="episode-heading">Episode 1</h5>
               </div>
             </div>
@@ -87,7 +115,7 @@ function MainSection() {
         style={{ height: "90vh" }}
       >
         <div id="home-slider" className="slider m-0 p-0 slider-video">
-          <video autoplay="" muted="" loop id="myVideo" class="w-100">
+          <video autoplay="" muted="" loop="" id="myVideo">
             <source
               src="https://multitude.s3.wasabisys.com/money-heist/trailer/aINOB5uahg4AamDl2e1bKq5fsZev7TACImTHRxeX.mp4"
               type="video/mp4"
@@ -95,12 +123,10 @@ function MainSection() {
             Your browser does not support HTML5 video.
           </video>
 
-
-
           <div className="slide slick-bg ">
             <div className="container-fluid position-relative h-100 main-section-container content">
               <div className="slider-inner h-100 ">
-                <div className="row align-items-center  iq-ltr-direction h-100 content">
+                <div className="row align-items-center  iq-ltr-direction h-100">
                   <div className="col-xl-6 col-lg-12 col-md-12 col-left-main ">
                     <h1
                       className="slider-text big-title title text-uppercase"
