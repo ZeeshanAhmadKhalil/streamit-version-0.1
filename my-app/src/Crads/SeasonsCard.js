@@ -18,16 +18,16 @@ function SeasonsCard() {
 
                 <li className="slide-item popular-seasons-container">
                    
-                      <h3 className="popular-seasons-heading">Popular Seasons</h3>
-                      <p className="popular-seasons-text">Most Watched Seasons By Day</p>
-                     <a className="iq-view-all" href="movie-category.html">View All</a> 
+                      <h3 className="container popular-seasons-heading">Popular Seasons</h3>
+                      <p className="container popular-seasons-text">Most Watched Seasons By Day</p>
+                     <a className="container iq-view-all" href="movie-category.html">View All</a> 
                 
                   </li>
                   <li className="slide-item">
                     <div className="block-images position-relative">
                       <div className="img-box">
                         <img
-                          src="https://media.istockphoto.com/photos/popcorn-and-clapperboard-picture-id1191001701?k=20&m=1191001701&s=612x612&w=0&h=uDszifNzvgeY5QrPwWvocFOUCw8ugViuw-U8LCJ1wu8="
+                          src="https://images.pexels.com/photos/7577858/pexels-photo-7577858.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                           className="img-fluid"
                           alt=""
                         />

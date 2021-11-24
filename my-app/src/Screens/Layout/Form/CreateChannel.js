@@ -7,7 +7,7 @@ import { Form } from "react-bootstrap";
 function CreateChannel() {
   return (
     <div className="create-channel-container">
-      <h3> Create Channel</h3>
+      <h3 className="create-channel-heading"> Create Channel</h3>
       <div className="create-channel-inner">
         <div className="user-details">
           <div className="avatar"></div>

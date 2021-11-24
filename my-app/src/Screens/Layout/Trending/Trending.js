@@ -6,8 +6,11 @@ import MainContent from '../MainSection/MainContent'
 function Trending() {
     return (
         <>
-         <MultitudeCarousel/>
+      
+        <MultitudeCarousel/>
         <MainContent/>
+  
+         
         </>
     )
 }

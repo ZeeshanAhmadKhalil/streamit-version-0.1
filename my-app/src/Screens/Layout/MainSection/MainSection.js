@@ -1,8 +1,8 @@
-import React from "react";
+import React, {useRef} from "react";
 import SeasonDetails from "./SeasonDetails";
 import trailer from "../Header/video/trailer.mp4";
 import { Modal, ModalBody, ModalHeader } from "reactstrap";
-
+import { FaPlay } from "react-icons/fa";
 
 function MainSection() {
   const [modalClassic, setModalClassic] = React.useState(false);
@@ -10,6 +10,13 @@ function MainSection() {
     e.preventDefault();
     setModalClassic(!modalClassic);
   };
+
+
+  const vidRef = useRef(null);
+  const handlePlayVideo = () => {
+    vidRef.current.play();
+    console.log(vidRef)
+  }
   return (
     <React.Fragment>
       <div className="modal-div">
@@ -19,9 +26,6 @@ function MainSection() {
           toggle={toggleModalClassic}
           className="modal-container"
         >
-          <ModalHeader toggle={toggleModalClassic}>
-         
-          </ModalHeader>
           <video
             muted=""
             loop=""
@@ -29,6 +33,7 @@ function MainSection() {
             autoplay=""
             class="w-100"
             id="modal-video"
+            ref={vidRef}
           >
             <source
               src="https://multitude.s3.wasabisys.com/money-heist/trailer/aINOB5uahg4AamDl2e1bKq5fsZev7TACImTHRxeX.mp4"
@@ -36,30 +41,29 @@ function MainSection() {
             />
             Your browser does not support HTML5 video.
           </video>
-          
 
           <ModalBody>
-          <div className="container col-lg-3 col-md-6 mt-4 mt-lg-0">
-            <div className="text-left">
-              <div className="textwidget">
-                <div className="d-flex align-items-center season-button">
-                  <a
-                    href="show-details.html"
-                    className="btn btn-hover iq-button button-season"
-                  >
-                    Season 1
-                  </a>
-                  <br />
-                  <a
-                    href="show-details.html"
-                    className="btn btn-hover iq-button"
-                  >
-                    Season 2
-                  </a>
+            <div className="container col-lg-3 col-md-6 mt-4 mt-lg-0">
+              <div className="text-left">
+                <div className="textwidget">
+                  <div className="d-flex align-items-center season-button">
+                    <a
+                      href="show-details.html"
+                      className="btn btn-hover iq-button button-season"
+                    >
+                      Season 1
+                    </a>
+                    <br />
+                    <a
+                      href="show-details.html"
+                      className="btn btn-hover iq-button"
+                    >
+                      Season 2
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
             <div
               className="container span-tags"
               data-animation-in="fadeInUp"
@@ -68,7 +72,7 @@ function MainSection() {
               <span className="ml-3">11-16-2021</span>
               <span className="badge badge-secondary p-2">11+</span>
             </div>
-            <div className="container modal-text ">
+            <div className="modal-text">
               <div className="text-left">
                 A criminal mastermind who goes by "The Professor" has a plan to
                 pull off the biggest heist in recorded history -- to print
@@ -81,9 +85,15 @@ function MainSection() {
                 the police
               </div>
               <div className="text-align-right">
-                <p><span className="span-props">Cast</span>: cast</p>
-                <p><span className="span-props">Genres</span>: Action</p>
-                <p><span className="span-props">publisher</span>: multitude</p>
+                <p className="modal-p-tag">
+                  <span className="span-props">Cast</span>: cast
+                </p>
+                <p className="modal-p-tag">
+                  <span className="span-props">Genres</span>: Action
+                </p>
+                <p className="modal-p-tag">
+                  <span className="span-props">publisher</span>: multitude
+                </p>
               </div>
             </div>
             <div>
@@ -92,10 +102,27 @@ function MainSection() {
 
             <div className="container season-episodes">
               <div className="season-episodes-upper">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSywN4mSK5myMOZH3drF1_uZtiJa8AIzO_c9Q&usqp=CAU"
-                  className="seasons-episode-img"
-                />
+                <div className="seasons-episode-img">
+                  <video
+                    muted=""
+                    loop=""
+                    class="w-100"
+                    id="modal-video video-placement"
+                   poster="https://images.pexels.com/photos/1292241/pexels-photo-1292241.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  
+                  >
+                    <source
+                      src="https://multitude.s3.wasabisys.com/money-heist/trailer/aINOB5uahg4AamDl2e1bKq5fsZev7TACImTHRxeX.mp4"
+                      type="video/mp4"
+                      
+                    />
+                    Your browser does not support HTML5 video.
+                  </video>
+                  <div className="modal-video-button" onClick={handlePlayVideo}>
+                    <FaPlay />
+                  </div>
+                </div>
+               
                 <h4 className="episode-heading">Episode 1</h4>
               </div>
               <div className="season-episodes-upper">
@@ -103,9 +130,11 @@ function MainSection() {
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5ktko1j5f9gRIDnY99Zw3UPTZ2zTdhGxy-A&usqp=CAU"
                   className="seasons-episode-img"
                 />
-                <h5 className="episode-heading">Episode 1</h5>
+                <h4 className="episode-heading">Episode 1</h4>
               </div>
             </div>
+
+            
           </ModalBody>
         </Modal>
       </div>
@@ -144,7 +173,11 @@ function MainSection() {
                       <span className="badge badge-secondary p-2">18+</span>
                       <span className="ml-3">2 Seasons</span>
                     </div>
-                    <p data-animation-in="fadeInUp" data-delay-in="1.2">
+                    <p
+                      data-animation-in="fadeInUp"
+                      className="main-section-text"
+                      data-delay-in="1.2"
+                    >
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard dummy text ever since the 1500s.

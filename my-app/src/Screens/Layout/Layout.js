@@ -28,9 +28,6 @@ function Layout() {
   return (
     <div>
       <STHeader />
-      
-
-      
 
       {/* <HorrorSeasons/>
 
@@ -58,29 +55,37 @@ function Layout() {
       </BrowserRouter> */}
 
       <Switch>
+        <Route exact path="/new" component={New}></Route>
 
-      <Route exact path="/new" component={New}>
-       
-      </Route>
+        <Route exact path="/home">
+          <MainSection />
 
-      <Route exact path="/home"><SectionHero />
-      <MainSection />
-      <MainContent /> </Route>
+          {/* Popular Seasonson the main page */}
+          <MainContent />
+          {/* The section where the image is  */}
+          <SectionHero />
 
-      <Route path="/trending" exact>
-        <Trending />
-      </Route>
+          <MainContent />
+          <MultitudeCarousel />
+          <MultitudeCarousel />
+        </Route>
 
-      
-      <Route path="/comedy" exact>
-        <Comedy />
-      </Route>
-       
+        <Route path="/trending" exact>
+          <Trending />
+        </Route>
+
+        <Route path="/comedy" exact>
+          <Comedy />
+        </Route>
+
+        {/* Where video icon is */}
+        <Route path="/createchannel" exact>
+          <CreateChannel />
+        </Route>
       </Switch>
       <UpperFooter />
 
-<LowerFooter />
-     
+      <LowerFooter />
     </div>
   );
 }

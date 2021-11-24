@@ -5,6 +5,39 @@
   --color-sacondary: #ffca00;
   --color-tertiary: #6c757d;
 }
+.align-items-center .btn-hover{
+
+}
+.btn-hover:hover{
+  color: black;
+}
+.margin-class{
+  margin: 8rem;
+}
+
+@media only screen and (min-width: 1499px) {
+  .container {
+    max-width: 1348px !important;
+}
+}
+
+
+.season-details-left {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 20px;
+    padding-block: 15px;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+.content{
+  color: black !important;
+}
 
 /*-------------------------------------------Navbar Custom Styling-----------------*/
 
@@ -26,8 +59,172 @@ header .navbar ul.navbar-nav {
 }
 
 /*---------------------------------------Notification------------------*/
-.bg-danger {
-  background-color: var(--color-sacondary) !important;
+.notifications-container{
+ width: 25vw;
+  background-color: rgb(15, 12, 12);
+ 
+ margin-left: 70rem;
+ animation: growDown 1s ease-in-out forwards;
+ transform-origin: top center;
+
+}
+
+.notif-list-container{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0.5rem;
+
+
+}
+
+.day-div{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 3rem;
+  align-items: center;
+  padding: 0.5rem;
+
+}
+
+.line-break{
+
+  width: 20vw;
+ background-color: #f1f1f1;
+  height: 0.1px;
+ margin: 3px;
+ margin-left: 2rem;
+}
+
+.notif-list-item{
+  display: flex;
+}
+
+.media-text{
+ 
+  width: 16vw;
+  font-size: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-weight: bold;
+ 
+}
+
+.notification-image{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+.date-time{
+  font-size: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  color: rgb(73, 69, 69);
+}
+
+.time-div{
+  display: flex;
+  justify-self: flex-end;
+  margin-left: 7px;
+  font-size: 10px;
+}
+
+
+@keyframes growDown {
+  0% {
+    transform: scaleY(0)
+  }
+  80% {
+    transform: scaleY(1.1)
+  }
+  100% {
+    transform: scaleY(1)
+  }
+}
+
+
+/*------------------------------------------------Profile-dropdown----------------------------*/
+.profile-dropdown-condainer{
+  background-color: rgb(49, 48, 48);
+  opacity: 0.5;
+  color: white;
+  width: 16vw;
+  padding: 1rem;
+  display: flex;
+align-items: center;
+flex-direction: column;
+position: absolute;
+justify-content: flex-end;
+margin-left: 73rem;
+animation: growDown 1s ease-in-out forwards;
+ transform-origin: top center;
+}
+
+.profile-list-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.line-break-user{
+  width: 14vw;
+  background-color: white;
+  height: 0.01rem;
+}
+
+.p-tag{
+  display: flex;
+  justify-self: flex-end;
+}
+
+
+/*----------------------------------------------------------Search bar----------------------*/
+.search-bar-container{
+  width: 23vw;
+  background-color: rgb(53, 51, 51);
+  display: flex;
+  flex-direction: row;
+  color: #413f3c;
+  margin-left: 70rem;
+  animation: growDown 1s ease-in-out forwards;
+ transform-origin: top center;
+
+}
+
+.search-icon{
+background-color: rgb(22, 19, 19);
+color: rgb(53, 51, 51);
+outline: none;
+}
+.search-placeholder{
+  background-color: rgb(22, 19, 19);
+  color: rgb(53, 51, 51);
+  border: 0px solid;
+  font-size: 11px;
+}
+
+.top-bar .searchbar .s-input {
+  border-color: var(--black-200);
+  background-color: var(--white);
+  box-shadow: none;
+  color: var(--black-700);
+  outline: none;
+}
+
+.s-input.s-input__search, .s-input.s-input__creditcard {
+  padding-left: 32px;
+}
+
+.s-input-icon.s-input-icon__search, .s-input-icon.s-input-icon__creditcard {
+  right: auto;
+  left: 0.7em;
+  color: var(--black-200);
 }
 
 /*--------------------------------------------------------Cards---------------------*/
@@ -38,9 +235,9 @@ header .navbar ul.navbar-nav {
 /* .iq-favorites{
 height: 70%;
 } */
-.main-content {
+/* .main-content {
   padding: 100px;
-}
+} */
 
 .favorites-slider li.slide-item{
   width: 15vw;
@@ -63,7 +260,7 @@ height: 70%;
   justify-content: center;
   align-items: center;
   height: 250px;
-  width: 30vw !important;
+  width: 25vw !important;
 
 ;
 }
@@ -73,7 +270,7 @@ height: 70%;
 }
 
 .img-box {
-  height: 45vh !important;
+  height: 41vh !important;
   background-size: cover !important;
 }
 
@@ -82,6 +279,11 @@ height: 70%;
 }
 .main-title {
   font-size: 40px;
+ margin-top: 1rem;
+}
+
+.main-cont{
+  border: red dotted;
 }
 /* .favorites-slider {
   gap: 20px;
@@ -101,8 +303,8 @@ height: 70%;
   left: 50%;
   min-width: 100%;
   min-height: 100%;
-  width: auto;
-  height: 100vh;
+  
+
   z-index: -100;
   transform: translate(-50%, -50%);
 
@@ -214,22 +416,55 @@ height: 70%;
 
 /*------------------------------------------------Footer--------------------*/
 
-
+.main-section-text{
+  color: white;
+}
 .upper-footer-container{
   
   display: flex;
-  justify-content: space-evenly;
-  padding-top: 50px;
-  color: white;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 4rem;
+  color: white; 
  
+}
+.footer-buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.btns-footer{
+  margin: 0.5rem;
 }
 
 .footer-logo{
       width: 100px;
 }
 
+.footer-lists{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .list-items-left{
   list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+  
+}
+
+.list-items-right{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.first-list{
+  display: flex;
 }
 
 .list-items-right{
@@ -243,8 +478,7 @@ height: 70%;
 
 .textwidget{
   display: flex;
-  
- 
+  flex-direction: column;
   align-items: center;
   margin-top: 10px;
 
@@ -283,7 +517,7 @@ height: 70%;
   color: var(--color-sacondary);
 }
 
-/* .d-flex{
+/* .d-flex{.main-title 
  margin-right: 20px;
 } */
 
@@ -292,13 +526,29 @@ height: 70%;
   background-color: black;
 } */
 
- /* .button-season{
-  margin-right: 10px;
-}  */
+.season-details-header{
+  color: black;
+} 
+
+.modal-video-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  width: 4rem;
+  background-color: rgba(233, 230, 71, 0.8);
+  position: absolute;
+  top: 31.2rem;
+  left: 5.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  
+}
 
 
 .modal-div{
   color: white;
+  border-radius: 30px;
 }
 
 .modal-content{
@@ -308,6 +558,7 @@ height: 70%;
 
 .ml-3{
   color: white;
+  margin-left: 80px;
 }
 .season-button{
  
@@ -316,8 +567,16 @@ height: 70%;
   gap: 10px;
 }
 
+.p-tag{
+
+  margin-bottom: 0rem !important;
+
+  margin-top: 0.4rem !important;
+}
+
 .modal-container{
   background-color: black;
+  border-radius: 30px;
 }
 
 
@@ -364,8 +623,13 @@ height: 70%;
 .season-episodes-upper{
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   color: white;
   gap: 1rem;
+}
+
+.video-placement{
+  height: 100%;
 }
 
 .episode-heading{
@@ -373,8 +637,12 @@ height: 70%;
 }
 
 .seasons-episode-img{
-  width: 20vw;
-  height: 40vh;
+  display: flex;
+  width: 12vw;
+  height: 20vh;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
 .modal-video{
   object-fit: contain;
@@ -464,9 +732,13 @@ height: 70%;
 .new-heading{
    
 }
+.create-channel-heading{
+  padding-top: 4rem;
+}
 
 .this-month{
   margin-bottom: 2rem;
+ padding-top: 4rem;
 }
 .card-text-list{
   display: flex;
@@ -475,6 +747,11 @@ height: 70%;
 
 .card-title{
 
+}
+
+/*----------------------------------------------------Carousal------------------*/
+.main-title-carousal{
+  margin-top: 5rem;
 }
 
 

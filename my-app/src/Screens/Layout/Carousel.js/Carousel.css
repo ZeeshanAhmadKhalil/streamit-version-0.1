@@ -4,7 +4,7 @@
 }
 
 .CarouselContainer{
-    border: 2px dashed red; 
+    /* border: 2px dashed red;  */
     width: 100%;
     
 }
@@ -35,15 +35,3 @@
     }
   }
 
-/* 
-  .react-multi-carousel-item{
-
-    width: 400px;
-
-  }
-   
-  
-  
-.react-multi-carousel-item--active{
-    width: 280px;
-}  */

@@ -442,6 +442,7 @@ header .navbar ul li:last-child {
 /* .trailor-video { position: absolute; bottom: 0; right: 0; z-index: 999;text-align: center; } */
 .iq-view-all {
   font-weight: 700;
+  margin-top: 1rem;
 }
 /* .trailor-video {
     margin: 0 auto;
@@ -843,6 +844,7 @@ li.slide-item:hover .block-images {
   padding: 7px 14px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
+  color: black;
 }
 /* edited end */
 
@@ -3553,7 +3555,7 @@ ul.f-link li a:hover {
   font-size: 2.369em;
 }
 .iq-price-footer .align-items-center .btn-hover {
-  padding: 12px 24px;
+  /* padding: 12px 24px; */
   text-transform: uppercase;
   letter-spacing: 1.5px;
 }
@@ -3717,7 +3719,7 @@ ul.f-link li a:hover {
   display: block;
 }
 .align-items-center .btn-hover {
-  padding: 12px 24px;
+  /* padding: 12px 24px; */
   text-transform: uppercase;
   letter-spacing: 1.5px;
 }

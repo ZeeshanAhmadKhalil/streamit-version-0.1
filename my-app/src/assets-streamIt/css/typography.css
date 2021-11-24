@@ -285,7 +285,7 @@ Border Color
 .btn-hover {
   background: #b58a32;
   border: 1px solid #b58a32;
-  color: var(--iq-white);
+  color: rgb(49, 48, 48) !important;
   transition: color 0.3s ease;
   display: inline-block;
   vertical-align: middle;
