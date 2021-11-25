@@ -22,6 +22,7 @@ import {
   Link,
   BrowserRouter,
 } from "react-router-dom";
+import Episodes from "./Video-Section/Episodes";
 
 function Layout() {
   const [toggleHeader, setToggleHeader] = React.useState(false);
@@ -83,6 +84,7 @@ function Layout() {
           <CreateChannel />
         </Route>
       </Switch>
+      {/* <Episodes/> */}
       <UpperFooter />
 
       <LowerFooter />

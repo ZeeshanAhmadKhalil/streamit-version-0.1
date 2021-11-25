@@ -254,9 +254,10 @@ function SeasonsCard() {
                               </div>
                             </div>
                           </li>
-                          <li>
-                            <span>
-                              <i className="ri-heart-fill"></i>
+
+                        <li>
+                          <span>
+                            <i className="ri-heart-fill"></i>
                             </span>
                             <span className="count-box">19+</span>
                           </li>

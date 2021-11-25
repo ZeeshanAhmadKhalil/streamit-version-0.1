@@ -262,11 +262,11 @@ height: 70%;
   height: 250px;
   width: 25vw !important;
 
-;
+
 }
 
 .popular-seasons-text {
-  border-bottom: 1px solid white;
+  text-decoration: underline;
 }
 
 .img-box {
@@ -753,6 +753,44 @@ height: 70%;
 .main-title-carousal{
   margin-top: 5rem;
 }
+
+/*-----------------------------------------------Video Popup Section----------------------------------*/
+.episodes-container{
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+flex-direction: column;
+  height: 100vh;
+
+}
+
+.eisode-video{
+
+}
+
+.video-sections-container{
+  display: flex;
+  
+}
+
+
+.left-video-section{
+  position: relative;
+
+}
+
+.right-video-section{
+
+}
+
+.eisode-video{
+  
+}
+
+.episode-video-button{
+position: absolute;
+}
+
 
 
 

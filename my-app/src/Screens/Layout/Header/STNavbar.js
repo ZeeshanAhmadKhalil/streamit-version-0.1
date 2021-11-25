@@ -159,20 +159,20 @@ function STNavbar() {
                       <li class="menu-item">
                         <a href="#">Catagories</a>
                         <ul class="sub-menu">
-                          <li class="menu-item">
-                            <a href="about-us.html">Cartoon</a>
+                          <li class="menu-item" onClick={handleComedy}>
+                            <a >Cartoon</a>
                           </li>
-                          <li class="menu-item ">
-                            <a href="contact.html">Adventure</a>
+                          <li class="menu-item " onClick={handleComedy}>
+                            <a >Adventure</a>
                           </li>
                           <li class="menu-item" onClick={handleComedy}>
                             <a>Comedy</a>
                           </li>
-                          <li class="menu-item">
-                            <a href="privacy-policy.html">Thriller</a>
+                          <li class="menu-item" onClick={handleComedy}>
+                            <a>Thriller</a>
                           </li>
-                          <li class="menu-item">
-                            <a href="#">Suspense</a>
+                          <li class="menu-item" onClick={handleComedy}>
+                            <a >Suspense</a>
                           </li>
                         </ul>
                       </li>
