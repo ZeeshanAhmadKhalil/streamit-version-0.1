@@ -1,7 +1,11 @@
-import React, { useRef } from "react";
+import React, {useRef} from "react";
 import SeasonDetails from "./SeasonDetails";
+import { Link} from "react-router-dom";
 import trailer from "../Header/video/trailer.mp4";
 import { Modal, ModalBody, ModalHeader } from "reactstrap";
+
+import { useHistory } from "react-router-dom";
+
 import { FaPlay } from "react-icons/fa";
 
 function MainSection() {
@@ -13,9 +17,15 @@ function MainSection() {
 
   const videoRef = useRef(null);
   
-  const handlePlayVideo = () => {
-    videoRef.current.play();
-    console.log(videoRef);
+  // const handlePlayVideo = () => {
+  //   videoRef.current.play();
+  //   console.log(videoRef);
+  // };
+
+
+  let history = useHistory();
+  const handleVideoSection = () => {
+    history.push("/videoSection");
   };
   return (
     <React.Fragment>
@@ -108,7 +118,7 @@ function MainSection() {
                       class="w-100"
                       id="modal-video video-placement"
                       poster="https://images.pexels.com/photos/1292241/pexels-photo-1292241.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                      ref={videoRef}
+                      // ref={videoRef}
                     >
                       <source
                         src="https://multitude.s3.wasabisys.com/money-heist/trailer/aINOB5uahg4AamDl2e1bKq5fsZev7TACImTHRxeX.mp4"
@@ -116,9 +126,11 @@ function MainSection() {
                       />
                       Your browser does not support HTML5 video.
                     </video>
-                  <div className="modal-video-button" onClick={handlePlayVideo}>
+                    <Link to="/videoSection">
+                  <a className="modal-video-button">
                     <FaPlay />
-                  </div>
+                  </a>
+                  </Link>
                 </div>
 
                 <h4 className="episode-heading">Episode 1</h4>

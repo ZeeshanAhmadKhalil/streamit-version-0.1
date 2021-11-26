@@ -9,7 +9,7 @@ import LowerFooter from "./Footer/LowerFooter";
 import Following from "./Following/Following";
 import MultitudeCarousel from "./Carousel.js/MultitudeCarousel";
 import CreateChannel from "./Form/CreateChannel";
-
+import { withRouter } from "react-router";
 import New from "./New/New";
 import Trending from "./Trending/Trending";
 import HorrorSeasons from "./PopularHorrorSeasons/HorrorSeasons";
@@ -79,8 +79,12 @@ function Layout() {
           <Comedy />
         </Route>
 
+        <Route exact path="/videoSection">
+          <Episodes />
+        </Route>
+       
         {/* Where video icon is */}
-        <Route path="/createchannel" exact>
+        <Route  exact path="/createchannel">
           <CreateChannel />
         </Route>
       </Switch>
@@ -92,4 +96,4 @@ function Layout() {
   );
 }
 
-export default Layout;
+export default withRouter(Layout);

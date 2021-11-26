@@ -1,41 +1,39 @@
 /*---------------------------------Variables -----------------------*/
 
 :root {
-  --color-primary: #b58a32;
+  --color-primary: #fae17e;
   --color-sacondary: #ffca00;
   --color-tertiary: #6c757d;
 }
-.align-items-center .btn-hover{
 
+.btn-hover:hover {
+  color: rgb(0, 0, 0);
 }
-.btn-hover:hover{
-  color: black;
-}
-.margin-class{
+.margin-class {
   margin: 8rem;
 }
 
 @media only screen and (min-width: 1499px) {
   .container {
     max-width: 1348px !important;
+  }
 }
-}
-
 
 .season-details-left {
-    display: flex;
-    flex-direction: column;
-    padding-inline: 20px;
-    padding-block: 15px;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 20px;
+  padding-block: 15px;
 }
-*, ::after, ::before {
-    box-sizing: border-box;
+*,
+::after,
+::before {
+  box-sizing: border-box;
 }
-user agent stylesheet
-div {
-    display: block;
+user agent stylesheet div {
+  display: block;
 }
-.content{
+.content {
   color: black !important;
 }
 
@@ -43,7 +41,7 @@ div {
 
 .navbar-right .iq-sub-dropdown {
   visibility: unset !important;
-   opacity: 1 !important;
+  opacity: 1 !important;
 }
 
 .logo {
@@ -59,59 +57,52 @@ header .navbar ul.navbar-nav {
 }
 
 /*---------------------------------------Notification------------------*/
-.notifications-container{
- width: 25vw;
+.notifications-container {
+  width: 25vw;
   background-color: rgb(15, 12, 12);
- 
- margin-left: 70rem;
- animation: growDown 1s ease-in-out forwards;
- transform-origin: top center;
 
+  margin-left: 70rem;
+  animation: growDown 1s ease-in-out forwards;
+  transform-origin: top center;
 }
 
-.notif-list-container{
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 0.5rem;
-
-
+.notif-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
 }
 
-.day-div{
+.day-div {
   display: flex;
   justify-content: flex-start;
   margin-left: 3rem;
   align-items: center;
   padding: 0.5rem;
-
 }
 
-.line-break{
-
+.line-break {
   width: 20vw;
- background-color: #f1f1f1;
+  background-color: #f1f1f1;
   height: 0.1px;
- margin: 3px;
- margin-left: 2rem;
+  margin: 3px;
+  margin-left: 2rem;
 }
 
-.notif-list-item{
+.notif-list-item {
   display: flex;
 }
 
-.media-text{
- 
+.media-text {
   width: 16vw;
   font-size: 10px;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
   font-weight: bold;
- 
 }
 
-.notification-image{
+.notification-image {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
@@ -120,72 +111,74 @@ padding: 0.5rem;
   align-items: flex-end;
 }
 
-.date-time{
+.date-time {
   font-size: 10px;
   display: flex;
   justify-content: space-evenly;
   color: rgb(73, 69, 69);
 }
 
-.time-div{
+.time-div {
   display: flex;
   justify-self: flex-end;
   margin-left: 7px;
   font-size: 10px;
 }
 
-
 @keyframes growDown {
   0% {
-    transform: scaleY(0)
+    transform: scaleY(0);
   }
   80% {
-    transform: scaleY(1.1)
+    transform: scaleY(1.1);
   }
   100% {
-    transform: scaleY(1)
+    transform: scaleY(1);
   }
 }
 
-
 /*------------------------------------------------Profile-dropdown----------------------------*/
-.profile-dropdown-condainer{
+.profile-dropdown-condainer {
   background-color: rgb(49, 48, 48);
   opacity: 0.5;
   color: white;
   width: 16vw;
   padding: 1rem;
   display: flex;
-align-items: center;
-flex-direction: column;
-position: absolute;
-justify-content: flex-end;
-margin-left: 73rem;
-animation: growDown 1s ease-in-out forwards;
- transform-origin: top center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  justify-content: flex-end;
+  margin-left: 73rem;
+  animation: growDown 1s ease-in-out forwards;
+  transform-origin: top center;
 }
 
-.profile-list-item{
+.profile-list-item {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
 }
 
-.line-break-user{
+.line-break-user {
   width: 14vw;
   background-color: white;
   height: 0.01rem;
 }
 
-.p-tag{
+.p-tag {
   display: flex;
   justify-self: flex-end;
 }
 
 
+
+
+
+
 /*----------------------------------------------------------Search bar----------------------*/
-.search-bar-container{
+.search-bar-container {
   width: 23vw;
   background-color: rgb(53, 51, 51);
   display: flex;
@@ -193,16 +186,15 @@ animation: growDown 1s ease-in-out forwards;
   color: #413f3c;
   margin-left: 70rem;
   animation: growDown 1s ease-in-out forwards;
- transform-origin: top center;
-
+  transform-origin: top center;
 }
 
-.search-icon{
-background-color: rgb(22, 19, 19);
-color: rgb(53, 51, 51);
-outline: none;
+.search-icon {
+  background-color: rgb(22, 19, 19);
+  color: rgb(53, 51, 51);
+  outline: none;
 }
-.search-placeholder{
+.search-placeholder {
   background-color: rgb(22, 19, 19);
   color: rgb(53, 51, 51);
   border: 0px solid;
@@ -217,11 +209,13 @@ outline: none;
   outline: none;
 }
 
-.s-input.s-input__search, .s-input.s-input__creditcard {
+.s-input.s-input__search,
+.s-input.s-input__creditcard {
   padding-left: 32px;
 }
 
-.s-input-icon.s-input-icon__search, .s-input-icon.s-input-icon__creditcard {
+.s-input-icon.s-input-icon__search,
+.s-input-icon.s-input-icon__creditcard {
   right: auto;
   left: 0.7em;
   color: var(--black-200);
@@ -239,14 +233,14 @@ height: 70%;
   padding: 100px;
 } */
 
-.favorites-slider li.slide-item{
+.favorites-slider li.slide-item {
   width: 15vw;
 }
 /* .img-box{
   height: 45vh;
 } */
 
-.img-box-horizontal{
+.img-box-horizontal {
   height: 24vh !important;
   width: 19rem !important;
 }
@@ -261,8 +255,6 @@ height: 70%;
   align-items: center;
   height: 250px;
   width: 25vw !important;
-
-
 }
 
 .popular-seasons-text {
@@ -279,10 +271,10 @@ height: 70%;
 }
 .main-title {
   font-size: 40px;
- margin-top: 1rem;
+  margin-top: 1rem;
 }
 
-.main-cont{
+.main-cont {
   border: red dotted;
 }
 /* .favorites-slider {
@@ -295,19 +287,15 @@ height: 70%;
 
 /*-------------------------------------------Main Section-----------------*/
 
-
 #myVideo {
- 
- position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   min-width: 100%;
   min-height: 100%;
-  
 
   z-index: -100;
   transform: translate(-50%, -50%);
-
 }
 
 .content {
@@ -323,7 +311,6 @@ height: 70%;
  position: absolute;
 } */
 
-
 /* #myVideo {
    object-fit: cover; 
    
@@ -332,9 +319,6 @@ height: 70%;
 
   /* top: 0;
   left: 0; */
-
-
-
 
 .text-primary {
   color: var(--color-sacondary) !important;
@@ -396,7 +380,7 @@ height: 70%;
 
 /*------------------------------------------Section Hero------------------*/
 .hero-section-container {
-  height: 95vh;
+  height: 90vh;
   background-color: violet;
 }
 
@@ -409,111 +393,105 @@ height: 70%;
   height: 100%;
 }
 
-.watch-trailer-svg{
+.watch-trailer-svg {
   width: 50px;
   height: 50px;
 }
 
 /*------------------------------------------------Footer--------------------*/
 
-.main-section-text{
+.main-section-text {
   color: white;
 }
-.upper-footer-container{
-  
+.upper-footer-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-top: 4rem;
-  color: white; 
- 
+  color: white;
 }
-.footer-buttons{
+.footer-buttons {
   display: flex;
   justify-content: space-between;
 }
 
-.btns-footer{
+.btns-footer {
   margin: 0.5rem;
 }
 
-.footer-logo{
-      width: 100px;
+.footer-logo {
+  width: 100px;
 }
 
-.footer-lists{
+.footer-lists {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.list-items-left{
+.list-items-left {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 10px;
-  
 }
 
-.list-items-right{
+.list-items-right {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
 }
-.first-list{
+.first-list {
   display: flex;
 }
 
-.list-items-right{
+.list-items-right {
   list-style: none;
 }
 
-.footer-link-title{
+.footer-link-title {
   font-size: large;
   margin-bottom: 0.1rem !important;
 }
 
-.textwidget{
+.textwidget {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
-
-
 }
 
-.lower-footer-list-items{
+.lower-footer-list-items {
   list-style: none;
   display: flex;
 }
 
-.lower-footer-list-item{
+.lower-footer-list-item {
   margin-right: 15px;
 }
 
-.footer-link-title{
+.footer-link-title {
   margin-bottom: 10px !important;
 }
-.footer-buttons{
-  display:flex;
+.footer-buttons {
+  display: flex;
   justify-content: space-between;
 }
 
-
-.btns-footer{
+.btns-footer {
   background-color: black;
   border-radius: 5px;
   padding-left: 1rem;
   padding-right: 1rem;
- color: white;
- 
+  color: white;
+
   border: 2px solid var(--color-sacondary);
 }
 
-.video-icon{
+.video-icon {
   color: var(--color-sacondary);
 }
 
@@ -526,11 +504,11 @@ height: 70%;
   background-color: black;
 } */
 
-.season-details-header{
+.season-details-header {
   color: black;
-} 
+}
 
-.modal-video-button{
+.modal-video-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -542,85 +520,79 @@ height: 70%;
   left: 5.5rem;
   border-radius: 50%;
   cursor: pointer;
-  
 }
 
-
-.modal-div{
+.modal-div {
   color: white;
   border-radius: 30px;
 }
 
-.modal-content{
+.modal-content {
   background-color: rgb(46, 44, 44);
   color: white;
 }
 
-.ml-3{
+.ml-3 {
   color: white;
   margin-left: 80px;
 }
-.season-button{
- 
- /* justify-content: center;
+.season-button {
+  /* justify-content: center;
   align-items: flex-start; */
   gap: 10px;
 }
 
-.p-tag{
-
+.p-tag {
   margin-bottom: 0rem !important;
 
   margin-top: 0.4rem !important;
 }
 
-.modal-container{
+.modal-container {
   background-color: black;
   border-radius: 30px;
 }
 
-
-.text-align-right{
+.text-align-right {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  
 }
-.ml-3{
+.ml-3 {
   margin-right: 3px;
   color: white;
 }
 
-.modal-text{
+.modal-text {
   display: flex;
   color: white;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
- padding: 1rem;
+  padding: 1rem;
 }
 
-.text-left{
+.text-left {
   width: 400px;
 }
-.span-props{
+.span-props {
   text-transform: uppercase;
   color: var(--color-sacondary);
   font: sans-serif 0.5rem;
 }
-.episodes-heading{
+.episodes-heading {
   margin: 1rem;
   color: white;
 }
 
-.season-episodes{
+.season-episodes {
   display: flex;
   flex-direction: column;
   color: white;
   gap: 10px;
 }
 
-.season-episodes-upper{
+.season-episodes-upper {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -628,15 +600,15 @@ height: 70%;
   gap: 1rem;
 }
 
-.video-placement{
+.video-placement {
   height: 100%;
 }
 
-.episode-heading{
+.episode-heading {
   color: white;
 }
 
-.seasons-episode-img{
+.seasons-episode-img {
   display: flex;
   width: 12vw;
   height: 20vh;
@@ -644,47 +616,41 @@ height: 70%;
   align-items: center;
   border-radius: 10px;
 }
-.modal-video{
+.modal-video {
   object-fit: contain;
   display: block;
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
-.span-tags{
+.span-tags {
   margin-top: 1rem;
 }
 
 /*---------------------------lower footer-------------------------------*/
 
-.lower-footer{
+.lower-footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
- 
-
 }
 
-.lower-footer-list{
- display: flex;
- flex-direction: row;
-
+.lower-footer-list {
+  display: flex;
+  flex-direction: row;
 }
 
-.info-share{
+.info-share {
   display: flex;
   flex-direction: row;
   list-style: none;
   justify-content: space-between;
- 
- 
 }
 
-
 /*-------------------------------------Create Channel----------------------------------------------*/
-.create-channel-container{
+.create-channel-container {
   height: 100vh;
   color: white;
   margin-left: 10rem;
@@ -692,27 +658,25 @@ height: 70%;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  
 }
-.create-channel-inner{
-    background-color: rgb(43, 40, 40);
-   box-shadow: rgba(182, 182, 182, 0) 0px 8px 24px;
+.create-channel-inner {
+  background-color: rgb(43, 40, 40);
+  box-shadow: rgba(182, 182, 182, 0) 0px 8px 24px;
 }
 
-.user-details-input{
+.user-details-input {
   padding: 4rem;
 }
 
-.user-details{
+.user-details {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
   margin-top: 30px;
-
 }
 
-.avatar{
+.avatar {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -720,79 +684,83 @@ height: 70%;
   margin-top: 10px;
 }
 
-
-
 /*----------------------------------------------------New-------------------------------------------------*/
-.new-container{
+.new-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.new-heading{
-   
+.new-heading {
 }
-.create-channel-heading{
+.create-channel-heading {
   padding-top: 4rem;
 }
 
-.this-month{
+.this-month {
   margin-bottom: 2rem;
- padding-top: 4rem;
+  padding-top: 4rem;
 }
-.card-text-list{
+.card-text-list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.card-title{
-
+.card-title {
 }
 
 /*----------------------------------------------------Carousal------------------*/
-.main-title-carousal{
+.main-title-carousal {
   margin-top: 5rem;
 }
 
 /*-----------------------------------------------Video Popup Section----------------------------------*/
-.episodes-container{
-  padding-top: 20px;
+.episodes-container {
+  padding-top: 4rem;
   display: flex;
   align-items: center;
-flex-direction: column;
-  height: 100vh;
-
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 70vh;
 }
 
-.eisode-video{
-
+.episodes-thumbnail{
+  height: 15vh;
+  width: 15vw;
+  border-radius: 0px;
 }
 
-.video-sections-container{
+.eisode-video {
+}
+
+.video-sections-container {
   display: flex;
+  justify-content: inherit;
+
+  margin-top: 3rem;
+}
+
+.left-video-section {
   
+ 
 }
 
-
-.left-video-section{
-  position: relative;
-
+.right-video-section {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.right-video-section{
-
+.eisode-video {
 }
 
-.eisode-video{
-  
+.episode-video-button {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
 }
-
-.episode-video-button{
-position: absolute;
-}
-
-
-
 
 /*-----------------------------media queries-------------------*/
 /* ======================== For mobile screen =================================*/

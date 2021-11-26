@@ -20,7 +20,7 @@ NOTE: This file contains the styling for responsive Template.
 ======================================*/
 
 :root {
-  --color-primary: #b58a32;
+  --color-primary: #fae17e;
   --color-sacondary: #ffca00;
   --color-tertiary: #6c757d;
 }
@@ -29,6 +29,22 @@ NOTE: This file contains the styling for responsive Template.
                     Header
 -----------------------------------------------------------------------*/
 
+*::selection{
+  background: var(--color-sacondary);
+  color: black;
+}
+.btn{
+  border: none !important;
+  border-radius: 5px;
+}
+
+.btn .iq-button, .btn-hover{
+  border: none !important;
+}
+
+.btn-hover {
+  background: var(--color-primary);
+}
 header#main-header {
   position: fixed;
   left: 0px;
