@@ -15,6 +15,7 @@
     "react-player": "^2.9.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-show-more-button": "^1.0.0",
     "react-svg": "^14.1.2",
     "reactstrap": "^9.0.1",
     "router-dom": "^2.2.6",

@@ -75,6 +75,10 @@ function Layout() {
           <Trending />
         </Route>
 
+        <Route path="/viewAll" exact>
+          <Trending />
+        </Route>
+
         <Route path="/comedy" exact>
           <Comedy />
         </Route>

@@ -43,7 +43,11 @@ function Episodes() {
           thumbnail={item.thumbnail}
           className="seasons-episode-img episodes-thumbnail"
         />
-        <h4 className="episode-heading">Episode 1</h4>
+        <div>
+        <h4 className="video-episode-heading">Episode 1</h4>
+        <p>Videos description goes here</p>
+        </div>
+        
       </div>
     );
   });

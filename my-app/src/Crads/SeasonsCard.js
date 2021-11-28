@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function SeasonsCard() {
   return (
@@ -20,7 +21,10 @@ function SeasonsCard() {
                    
                       <h3 className="container popular-seasons-heading">Popular Seasons</h3>
                       <p className="container popular-seasons-text">Most Watched Seasons By Day</p>
-                     <a className="container iq-view-all" href="movie-category.html">View All</a> 
+                      <Link to="/viewAll">
+                      <a className="container iq-view-all" >View All</a> 
+                      </Link>
+                    
                 
                   </li>
                   <li className="slide-item">

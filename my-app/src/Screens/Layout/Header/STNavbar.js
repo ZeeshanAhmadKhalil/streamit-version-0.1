@@ -41,15 +41,22 @@ function STNavbar() {
 
   const handleDropdown = () => {
     setProfile(!profile);
+    setSearchBar(false);
+    setProfileDropdownState(false);
+
   };
 
    const handleProfileDropdown = () => {
     setProfileDropdownState(!profileDropwnState);
+    setProfile(false);
+    setSearchBar(false);
     
   };
 
   const handleSearch = () =>{
        setSearchBar(!searchBar)
+       setProfileDropdownState(false);
+    setProfile(false);
   }
 
 
@@ -234,9 +241,16 @@ function STNavbar() {
           </div>
         </div>
       </div>
-      {profileDropwnState && <UserProfile/>}
+      
+      {profileDropwnState && <UserProfile setProfileDropdownState={setProfileDropdownState}/> }
       {profile && <Notifications/>}
       {searchBar && <SearchBar/>}
+
+    {/* <div className="outer-div-popups" onClick={setProfileDropdownState(false),
+      setSearchBar(false),
+      setProfile(false)}>
+      </div> */}
+      
 
      
     </header>

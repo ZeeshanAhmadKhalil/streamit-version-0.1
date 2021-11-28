@@ -1,7 +1,11 @@
 import React from 'react'
 
-function UserProfile() {
+function UserProfile({setProfileDropdownState} ) {
+
+
     return (
+
+        // <div className="outer-div-popups" onClick={setProfileDropdownState(false)}>
         <div className="profile-dropdown-condainer">
         <div className="profile-list-items-container">
             <div className="profile-list-item">
@@ -22,6 +26,7 @@ function UserProfile() {
             </div>
         </div>
     </div>
+    // </div>
     )
 }
 
