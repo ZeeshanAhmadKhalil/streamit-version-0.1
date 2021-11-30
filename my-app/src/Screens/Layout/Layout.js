@@ -58,7 +58,7 @@ function Layout() {
       <Switch>
         <Route exact path="/new" component={New}></Route>
 
-        <Route exact path="/home">
+        <Route exact path="/">
           <MainSection />
 
           {/* Popular Seasonson the main page */}

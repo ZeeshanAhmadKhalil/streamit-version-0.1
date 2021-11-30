@@ -30,7 +30,7 @@ function MultitudeCarousel() {
     <div className="container iq-main-header d-flex align-items-center justify-content-between">
     <h4 className="main-title-carousal">Latest Seasons</h4>
   </div>
-    <div className="">
+    <div className="iq-suggestede">
       <section id="iq-favorites">
         <div className="container-fluid">
           <div className="container">

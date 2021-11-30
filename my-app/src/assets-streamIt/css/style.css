@@ -541,7 +541,7 @@ header .navbar ul li:last-child {
                       Pages Content
 -----------------------------------------------------------------------*/
 .main-content {
-  padding-top: 40px;
+  /* padding-top: 40px; */
 }
 .block-space {
   padding: 40px 0;

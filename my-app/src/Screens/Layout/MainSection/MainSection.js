@@ -46,6 +46,7 @@ function MainSection() {
             autoplay=""
             class="w-100"
             id="modal-video"
+            style={{height: "50vh", objectFit: "fill"}}
           >
             <source
               src="https://multitude.s3.wasabisys.com/money-heist/trailer/aINOB5uahg4AamDl2e1bKq5fsZev7TACImTHRxeX.mp4"
@@ -77,12 +78,12 @@ function MainSection() {
               </div>
             </div>
             <div
-              className="container span-tags"
+              className="span-tags"
               data-animation-in="fadeInUp"
               data-delay-in="1"
             >
               <span className="ml-3">11-16-2021</span>
-              <span className="badge badge-secondary p-2">11+</span>
+              <span className="badge badge-secondary p-2" style={{marginLeft: "5px"}}>11+</span>
             </div>
             <div className="modal-text">
               <div className="text-left">
@@ -98,7 +99,8 @@ function MainSection() {
               </div>
               <div className="text-align-right">
                 <p className="modal-p-tag">
-                  <span className="span-props">Cast</span>: cast
+                  <span className="span-props">Cast</span>: cast prepare for a showdown <br/> for a showdown with
+                  showdown<br/> for a showdown with
                 </p>
                 <p className="modal-p-tag">
                   <span className="span-props">Genres</span>: Action
@@ -198,10 +200,10 @@ function MainSection() {
       <section
         id="home"
         className="iq-main-slider p-0 iq-rtl-direction"
-        style={{ height: "90vh" }}
+        style={{ height: "100vh" }}
       >
         <div id="home-slider" className="slider m-0 p-0 slider-video">
-          <video autoplay="" muted="" loop="" id="myVideo">
+          <video autoplay="" muted="" loop="" id="myVideo" style={{height: "100vh", backgroundSize : "cover"}}>
             <source
               src="https://multitude.s3.wasabisys.com/money-heist/trailer/aINOB5uahg4AamDl2e1bKq5fsZev7TACImTHRxeX.mp4"
               type="video/mp4"
