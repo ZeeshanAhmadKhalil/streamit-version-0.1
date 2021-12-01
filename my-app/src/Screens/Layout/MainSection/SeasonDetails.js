@@ -7,7 +7,7 @@ function SeasonDetails() {
         <div>
           <h3 className="season-details-header">Season 2</h3>
         </div>
-        <div>
+        <div className="season-details-header_paragraph">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since

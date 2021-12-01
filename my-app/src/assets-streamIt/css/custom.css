@@ -56,7 +56,7 @@ user agent stylesheet div {
 }
 
 header .navbar ul li.menu-item a {
-  font-size: 12px;
+  font-size: 2vh;
 }
 
 header .navbar ul.navbar-nav {
@@ -102,11 +102,11 @@ right: 1.5rem;
 
 .media-text {
   width: 16vw;
-  font-size: 10px;
+  font-size: 1.5vh;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  font-weight: bold;
+ 
 }
 
 .notification-image {
@@ -119,7 +119,7 @@ right: 1.5rem;
 }
 
 .date-time {
-  font-size: 10px;
+  font-size: 1.5vh;
   display: flex;
   justify-content: space-evenly;
   color: rgb(73, 69, 69);
@@ -129,7 +129,7 @@ right: 1.5rem;
   display: flex;
   justify-self: flex-end;
   margin-left: 7px;
-  font-size: 10px;
+  font-size: 1.5vh;
 }
 
 @keyframes growDown {
@@ -334,8 +334,15 @@ height: 70%;
   /* top: 0;
   left: 0; */
 
+.btn btn-link{
+  font-size: 1.8vh !important;
+}
+
+
+
 .text-primary {
   color: var(--color-sacondary) !important;
+  font-size: 1.8vh !important;
 }
 
 .play-now-button {
@@ -349,6 +356,7 @@ height: 70%;
 .btn .iq-button,
 .btn-hover {
   background-color: var(--color-sacondary) !important;
+  font-size: 1.9vh;
   /* border: 2px solid var(--color-sacondary) !important; */
 }
 .main-section-container {
@@ -362,14 +370,15 @@ height: 70%;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  
 }
 
 .season-details-container {
   display: flex;
   border-radius: 10px;
   background-color: #b58a32;
-  min-height: 150px;
-  margin-block: 5px;
+  min-height: 8vh;
+  margin-block: 1vh;
   background-image: linear-gradient(to right, #b58a32, #413f3c);
   opacity: 0.8;
 }
@@ -395,7 +404,7 @@ height: 70%;
 /*------------------------------------------Section Hero------------------*/
 .hero-section-container {
   height: 90vh;
-  background-color: violet;
+  /* background-color: violet; */
 }
 
 .section-image {
@@ -416,6 +425,7 @@ height: 70%;
 
 .main-section-text {
   color: white;
+  font-size: 1.8vh;
 }
 .upper-footer-container {
   display: flex;
@@ -423,6 +433,7 @@ height: 70%;
   align-items: center;
   margin-top: 4rem;
   color: white;
+ 
 }
 .footer-buttons {
   display: flex;
@@ -470,6 +481,8 @@ height: 70%;
   font-size: large;
   margin-bottom: 0.1rem !important;
 }
+
+
 
 .textwidget {
   /* display: flex;
@@ -548,6 +561,16 @@ height: 70%;
 
 .season-details-header {
   color: black;
+  font-size: 3vh;
+}
+
+.nav-item .nav-icon{
+font-size: 4vh;
+}
+
+
+.season-details-header_paragraph{
+font-size: 1.9vh;
 }
 
 .modal-video-button {
@@ -805,6 +828,51 @@ background-size: cover;
   align-items: center;
 }
 
+/*----------------------------------------------Profile Dashboard------------------------------------------------*/
+
+.MuiFormLabel-root.Mui-focused {
+  color: yellow !important;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: yellow !important;
+  font: yellow;
+}
+
+
+.dashboard-container{
+  height: 80vh;
+  position: relative;
+}
+
+.blue-div{
+  height: 30vh;
+  background-color: var(--color-sacondary);
+
+background: linear-gradient(90deg, var(--color-sacondary) 38%, rgba(201,176,12,1) 60%, rgb(245, 224, 131) 100%);
+  
+}
+
+.white-div
+{
+ 
+  height: 60vh;
+  background-color: #a89a9a;
+  
+}
+
+.form-div{
+  height: 60vh;
+  width: 70vw;
+  background-color: #2e2c28;
+position: absolute;
+top:7rem;
+left: 9rem;
+border-radius: 8px;
+
+  box-shadow: 0 8px 8px -4px #47443e;
+
+}
 /*-----------------------------media queries-------------------*/
 /* ======================== For mobile screen =================================*/
 @media only screen and (max-width: 600px) {

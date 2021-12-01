@@ -36,7 +36,7 @@ function MultitudeCarousel() {
           <div className="container">
             <div className="col-sm-12">
               <div className="favorites-content d-flex w-100 CarouselSplit">
-                <div className="CarouselContainer">
+                <div className="container CarouselContainer">
                   <Carousel responsive={responsive}>
                   
 

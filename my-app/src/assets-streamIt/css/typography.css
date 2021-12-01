@@ -419,22 +419,22 @@ Line Height
 Font Size
 ------------------------------------------------*/
 .font-size-12 {
-  font-size: 12px;
+  font-size: 1.5vh;
 }
 .font-size-13 {
-  font-size: 13px;
+  font-size: 2vh;
 }
 .font-size-14 {
-  font-size: 14px;
+  font-size: 2vh;
 }
 .font-size-16 {
-  font-size: 16px;
+  font-size: 2.5vh;
 }
 .font-size-18 {
-  font-size: 18px;
+  font-size: 3vh;
 }
 .font-size-20 {
-  font-size: 20px;
+  font-size: 3.5vh;
 }
 .font-size-21 {
   font-size: 21px;

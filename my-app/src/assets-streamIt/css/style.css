@@ -69,7 +69,7 @@ header .navbar-light .navbar-brand img.logo {
   position: absolute;
   left: 15px;
   top: 6px;
-  font-size: 16px;
+  font-size: 2vh;
 }
 .nav-item span.dots {
   height: 10px;
@@ -183,7 +183,7 @@ header .navbar ul li.menu-item a:hover {
 }
 .searchbutton {
   position: absolute;
-  font-size: 22px;
+  font-size: 2.5vh;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -323,7 +323,7 @@ header .navbar ul li {
   display: inline-block;
 }
 header .navbar ul li.menu-item a {
-  font-size: 16px;
+  font-size: 2vh;
   font-weight: 400;
   position: relative;
   padding: 0px 0px 0px 10px;
@@ -363,7 +363,7 @@ header .navbar ul li.menu-item a {
 }
 .more-toggle {
   color: var(--iq-white) !important;
-  font-size: 22px;
+  font-size: 2vh;
 }
 .dropdown-toggle.more-toggle::after {
   content: none;
@@ -429,7 +429,7 @@ header .navbar ul li:last-child {
   left: 80px;
 }
 #home-slider h1.slider-text {
-  font-size: 80px;
+  font-size: 6vh;
   margin: 15px 0;
 }
 #home-slider p {
@@ -466,7 +466,7 @@ header .navbar ul li:last-child {
 } */
 .channel-name {
   color: var(--color-sacondary);
-  font-size: 20px;
+  font-size: 4vh;
   margin-left: 10px;
   letter-spacing: 2.5px;
   font-weight: 500;
@@ -512,7 +512,7 @@ header .navbar ul li:last-child {
   opacity: 1;
 }
 .w-trailor {
-  font-size: 17px;
+  font-size: 3.5vh;
   letter-spacing: 3.5px;
   font-weight: 600;
   color: var(--iq-white);
@@ -638,7 +638,7 @@ li.slide-item:hover .block-images {
   height: 20px;
   width: 20px;
   line-height: 26px;
-  font-size: 12px;
+  font-size: 2vh;
   text-align: center;
   background: var(--iq-white);
   color: var(--color-sacondary);

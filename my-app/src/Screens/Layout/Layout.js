@@ -23,6 +23,7 @@ import {
   BrowserRouter,
 } from "react-router-dom";
 import Episodes from "./Video-Section/Episodes";
+import Dashboard from "./User-profile/Dashboard";
 
 function Layout() {
   const [toggleHeader, setToggleHeader] = React.useState(false);
@@ -92,6 +93,7 @@ function Layout() {
           <CreateChannel />
         </Route>
       </Switch>
+      <Dashboard/>
       {/* <Episodes/> */}
       <UpperFooter />
 
