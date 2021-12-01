@@ -17,7 +17,7 @@ function SeasonsCard() {
               <div className="favorites-contetns ">
                 <ul className="favorites-slider list-inline  row p-0 mb-0 iq-rtl-direction">
 
-                <li className=" saparate-container col-md-4 col-lg-4  d-flex flex-column  justify-content-center align-items-center slide-item popular-seasons-container">
+                <li className="saparate-container col-md-4 col-lg-4  d-flex flex-column  justify-content-center align-items-center slide-item popular-seasons-container" style={{paddingRight:"40px !important"}}>
                    
                       <h3 className="popular-seasons-heading">Popular Seasons</h3>
                       <p className="popular-seasons-text popular-seasons-text border border-top-0 border-left-0 border-right-0 border-bottom-secondary mt-3">Most Watched Seasons By Day</p>

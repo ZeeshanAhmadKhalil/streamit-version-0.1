@@ -200,10 +200,10 @@ function MainSection() {
       <section
         id="home"
         className="iq-main-slider p-0 iq-rtl-direction"
-        style={{ height: "100vh" }}
+        // style={{ height: "100vh" }}
       >
         <div id="home-slider" className="slider m-0 p-0 slider-video">
-          <video autoplay="" muted="" loop="" id="myVideo" style={{height: "100vh", backgroundSize : "cover"}}>
+          <video autoplay="" muted="" loop="" id="myVideo" style={{height: "100vh", objectFit : "fill"}}>
             <source
               src="https://multitude.s3.wasabisys.com/money-heist/trailer/aINOB5uahg4AamDl2e1bKq5fsZev7TACImTHRxeX.mp4"
               type="video/mp4"
